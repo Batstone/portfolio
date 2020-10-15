@@ -556,11 +556,19 @@ header {
 }
 
 .project-container .project-image-container {
-  width: 50%;
+  width: 600px;
+  overflow: hidden;
 }
 
 .project-container .project-image-container img {
   width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project-container .project-image-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project-container .project-text {
@@ -584,12 +592,17 @@ header {
 
 .project-container .project-text h3 {
   font-size: 34px;
-  -webkit-transition: 0.5;
-  transition: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .project-container .project-text h3 a {
   color: #4f4f4f;
+}
+
+.project-container .project-text h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project-container .text-right {
@@ -666,6 +679,10 @@ footer {
   color: #fff;
 }
 
+.footer-logo span {
+  color: #208307;
+}
+
 .footer-nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,10 +703,52 @@ footer {
   margin-left: 50px;
 }
 
+.main-nav li a {
+  font-size: 15px;
+  color: #777777;
+  font-weight: 800;
+  line-height: 40px;
+  padding: 0 10px;
+  margin-left: 60px;
+  position: relative;
+  letter-spacing: 1.8px;
+}
+
+.main-nav li a:after {
+  background: #208307 none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin-top: -1px;
+  -webkit-margin-before: -2px;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 0;
+}
+
+.main-nav li a:hover,
+.main-nav li.active a {
+  color: #afafaf;
+}
+
+.main-nav li a:hover:after,
+.main-nav li.active a:after {
+  width: 100%;
+}
+
 .social-icons-container i {
   color: #fff;
   font-size: 30px;
   margin-left: 70px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.social-icons-container i:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .footer-text-container {

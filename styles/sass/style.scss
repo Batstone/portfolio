@@ -288,10 +288,17 @@ header {
     padding: 20px;
     background-color: #fff;
     .project-image-container {
-        width: 50%;
+        width: 600px;
+        overflow: hidden;
         img {
             width: 100%;
+            transition: 0.5s;
         }
+        img:hover {
+            transform: scale(1.1);
+        }
+        // background-image: url(../../assets/images/Guitar.JPG);
+        // background-size: contain;
     }
 
     .project-text {
@@ -306,11 +313,14 @@ header {
         }
         h3 {
             font-size: 34px;
-            transition: 0.5;
+            transition: 0.5s;
             a {
                 color: #4f4f4f;
             }
-        }        
+        }
+        h3:hover {
+            transform: scale(1.1)
+        }    
     }
     .text-right {
         margin-left: 50px;
@@ -320,7 +330,6 @@ header {
         margin-right: 50px;
         text-align: right;
     }
-
 }
 
 /* Contact 
@@ -366,6 +375,9 @@ footer {
 
 .footer-logo {
         color: #fff;
+        span {
+            color: #208307
+        }
 }
 
 .footer-nav-container {
@@ -380,11 +392,51 @@ footer {
     }
 }
 
+.main-nav li a {
+    font-size: 15px;
+    color: #777777;
+    font-weight: 800;
+    line-height: 40px;
+    padding: 0 10px;
+    margin-left: 60px;
+    position: relative;
+	letter-spacing: 1.8px;
+}
+
+.main-nav li a:after {
+    background: #208307 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin-top: -1px;
+	-webkit-margin-before: -2px;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 0;
+}
+.main-nav li a:hover,
+.main-nav li.active a {
+    color: #afafaf;
+}
+.main-nav li a:hover:after,
+.main-nav li.active a:after {
+    width: 100%;
+}
+
+
+
 .social-icons-container {
+ 
     i {
         color: #fff;
         font-size: 30px;
         margin-left: 70px;
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.3);
+        }
     }
 }
 
