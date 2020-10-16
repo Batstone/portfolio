@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae5be4dc98.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon/android-chrome-512x512.png" />
 
     <title>Adam Batstone</title>
+
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="wrapper">
             <div class="header-container">
-                <h2 class="header-logo">AB<span>.</span></h2>
-                <a class="mobile-nav"><i class="fas fa-bars"></i>
-                    <nav class="main-nav">
-                        <ul>
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </nav>
+                <div class="header-mobile-container">
+                    <h2 class="header-logo">AB<span>.</span></h2>
+                    <a class="mobile-nav"><i class="fas fa-bars"></i></a>
+                    <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
+                </div>
+                <nav class="main-nav js-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="about-me-section">
+        <section class="about-me-section" id="about">
             <div class="wrapper">
                 <div class="about-me-container">
                     <div class="about-me-text-container">
@@ -47,11 +51,11 @@
                         <div class="about-me-button-container">
                             <button class="about-me-button">My Work</button>
                         </div>
-
                     </div>
 
                     <div class="about-me-img-container">
-                        <img src="./assets/images/portfolio-headshot-min.jpg" width="419" height="750">
+                        <img src="./assets/images/portfolio-headshot-min.jpg" width="419" height="750"
+                            alt="A headshot of the web devleoper, Adam Batstone">
                     </div>
                 </div>
 
@@ -59,7 +63,7 @@
 
         </section>
 
-        <section>
+        <section id="skills">
             <div class="wrapper">
                 <div class="section-title">
                     <h2>My Skills</h2>
@@ -71,50 +75,50 @@
                 <!--Icons-->
                 <ul class="icon-container">
                     <li>
-                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-html5" aria-hidden="true"></i>
                         <p>HTML5</p>
                     </li>
                     <li>
-                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
                         <p>CSS3</p>
                     </li>
                     <li>
-                        <i class="fas fa-fire"></i>
+                        <i class="fas fa-fire" aria-hidden="true"></i>
                         <p>Firebase</p>
                     </li>
                     <li>
-                        <i class="fab fa-sass"></i>
+                        <i class="fab fa-sass" aria-hidden="true"></i>
                         <p>Sass</p>
                     </li>
                     <li>
-                        <i class="fab fa-react"></i>
+                        <i class="fab fa-react" aria-hidden="true"></i>
                         <p>REACT</p>
                     </li>
                     <li>
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-dollar-sign" aria-hidden="true"></i>
                         <p>jQUERY</p>
                     </li>
                     <li>
-                        <i class="fab fa-js"></i>
+                        <i class="fab fa-js" aria-hidden="true"></i>
                         <p>JavaScript</p>
                     </li>
                     <li>
-                        <i class="fab fa-git-alt"></i>
+                        <i class="fab fa-git-alt" aria-hidden="true"></i>
                         <p>Git</p>
                     </li>
                     <li>
-                        <i class="fas fa-universal-access"></i>
+                        <i class="fas fa-universal-access" aria-hidden="true"></i>
                         <p>Accessibility</p>
                     </li>
                     <li>
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                         <p>Responsive Design</p>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="portfolio-section">
+        <section class="portfolio-section" id="projects">
             <div class="wrapper">
                 <div class="section-title">
                     <h2>My Portfolio</h2>
@@ -127,66 +131,64 @@
                 <div class="portfoilo-container">
                     <div class="project-container">
                         <div class="project-image-container">
-                            <img src="./assets/images/Guitar.JPG" alt="">
+                            <img src="./assets/images/Guitar.JPG"
+                                alt="The landing page of the Guitar Chords application.">
                         </div>
                         <div class="project-text text-right">
-                            <h3><a>Guitar Chords</a></h3>
-                            <h4>Tech Used</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptas nisi esse dolor
-                                dolorem atque rerum recusandae nihil. Nesciunt minima magnam quisquam nulla eaque
-                                reprehenderit voluptates ipsam reiciendis voluptatem odit sit ipsa quam, corporis cumque
-                                quod officiis repellendus molestiae laborum?</p>
+                            <h3><a href="https://batstone.github.io/adamBatstoneProjectThree/">Guitar Chords</a></h3>
+                            <h4>HTML | CSS | Javascript</h4>
+                            <p>The Guitar Chords application features a fully interactive fretboard purely made in CSS.
+                                Users can select a chord, play the audio of the full strummed chord, or hover over the
+                                individual strings to hear the individual notes. This priject was inspired by my
+                                dedication to education.
+                            </p>
                         </div>
                     </div>
 
                     <div class="project-container">
                         <div class="project-text text-left">
-                            <h3><a>Mixologi&Eacute; </a></h3>
-                            <h4>Tech Used</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptas nisi esse dolor
-                                dolorem atque rerum recusandae nihil. Nesciunt minima magnam quisquam nulla eaque
-                                reprehenderit voluptates ipsam reiciendis voluptatem odit sit ipsa quam, corporis cumque
-                                quod officiis repellendus molestiae laborum?</p>
+                            <h3><a href="https://teamjuno.github.io/adam-batstone-karmen-salim-project-four/">Mixologi&Eacute;
+                                </a></h3>
+                            <h4>HTML | CSS | Jquery | REST API</h4>
+                            <p>Looking to fix the perfect cocktail? Mixologi&Eacute; is a stylish application made to
+                                help you find the perfect recipe for any occasion! </p>
                         </div>
                         <div class="project-image-container">
-                            <img src="./assets/images/Mixologie..JPG" alt="">
+                            <img src="./assets/images/Mixologie..JPG"
+                                alt="The stylish and sleek main page of the Mixologi&Eacute; application.">
                         </div>
                     </div>
 
                     <div class="project-container">
                         <div class="project-image-container">
-                            <img src="./assets/images/trivia-time.JPG" alt="">
+                            <img src="./assets/images/trivia-time.JPG" alt="The start screen of the Trivie Time app.">
                         </div>
                         <div class="project-text text-right">
-                            <h3><a>Trivia Time!</a></h3>
-                            <h4>Tech Used</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptas nisi esse dolor
-                                dolorem atque rerum recusandae nihil. Nesciunt minima magnam quisquam nulla eaque
-                                reprehenderit voluptates ipsam reiciendis voluptatem odit sit ipsa quam, corporis cumque
-                                quod officiis repellendus molestiae laborum?</p>
+                            <h3><a href="https://thegloriousalpacas.github.io/trivia-time/">Trivia Time!</a></h3>
+                            <h4>HTML | CSS | REACT | REST API</h4>
+                            <p> Compete against your friends while racing the clock in this exciting trivia game. This
+                                application allows users to select from a number of trivia categories, to allow users to
+                                test their knowledge in an fun educational game.
+                            </p>
                         </div>
                     </div>
-
                     <div class="project-container">
                         <div class="project-text text-left">
-                            <h3><a>Music Notes</a></h3>
-                            <h4>Tech Used</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptas nisi esse dolor
-                                dolorem atque rerum recusandae nihil. Nesciunt minima magnam quisquam nulla eaque
-                                reprehenderit voluptates ipsam reiciendis voluptatem odit sit ipsa quam, corporis cumque
-                                quod officiis repellendus molestiae laborum?</p>
+                            <h3><a href="https://batstone.github.io/adam-batstone-project-five/">Music Notes</a></h3>
+                            <h4>HTML | CSS | REACT | FIREBASE</h4>
+                            <p>Take notes during your music rehearsals and track your progress on specific repertoire.
+                            </p>
                         </div>
                         <div class="project-image-container">
-                            <img src="./assets/images/Music-notes.JPG" alt="">
+                            <img src="./assets/images/Music-notes.JPG"
+                                alt="The landing page of the Music Notes application">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <div class="wrapper">
                 <div class="section-title">
                     <h2>Contact</h2>
@@ -196,9 +198,11 @@
                     </div>
                 </div>
                 <div class="contact-section-container">
+                    <p>Let's build something together! Please contact me to discuss how we can bring your ideas to the
+                        web.</p>
                     <a href="mailto:adam.batstone@gmail.com">
                         <div class="contact-text-container">
-                            <i class="far fa-envelope"></i>
+                            <i class="far fa-envelope" aria-hidden="true"></i>
                             <h4>Connect with Me</h4>
                         </div>
                     </a>
@@ -214,27 +218,32 @@
                     <h2 class="footer-logo">AB<span>.</span></h2>
                     <nav class="footer-nav">
                         <ul>
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="social-icons-container">
-                    <a href="https://github.com/Batstone"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/aBst0ne"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/adam-batstone-5537581b5/"><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Batstone"><i class="fab fa-github" aria-hidden="true"></i><span
+                            class="sr-only">Adam Batstone - Github</span></a>
+                    <a href="https://twitter.com/aBst0ne"><i class="fab fa-twitter" aria-hidden="true"></i><span
+                            class="sr-only">Adam Batstone - Twitter</span></a></a>
+                    <a href="https://www.linkedin.com/in/adam-batstone-5537581b5/"><i class="fab fa-linkedin-in"
+                            aria-hidden="true"></i><span class="sr-only">Adam Batstone - LinkedIn</span></a></a>
                 </div>
             </div>
             <div class="footer-text-container">
                 <p>&#169; 2020 Adam Batstone</p>
             </div>
-
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

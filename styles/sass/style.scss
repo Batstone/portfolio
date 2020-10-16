@@ -29,7 +29,8 @@ button {
 	transition: all 0.3s ease 0s;
 }
 
-button:hover{
+button:hover,
+button:focus    {
     background-color: #000000;
 }
 
@@ -49,17 +50,8 @@ a {
     color: #ffffff;
     font-weight: 400;
     text-transform: uppercase;
-	line-height: 1;
-}
-a,a > * {
-    outline: none;
+    line-height: 1;
     cursor: pointer;
-    text-decoration: none;
-}
-a:focus,
-a:hover {
-    color: #ffffff;
-    outline: none;
     text-decoration: none;
 }
 
@@ -149,11 +141,15 @@ header {
     padding-top: 30px;
 }
 
+.main-nav {
+    display: none;
+}
+
 .mobile-nav {
     display: none;
     i {
         font-size: 30px;
-        color: #208307
+        color: #4f4f4f
     }
 }
 
@@ -204,14 +200,15 @@ header {
     width: 0;
 }
 .main-nav li a:hover,
+.main-nav li a:focus,
 .main-nav li.active a {
     color: #afafaf;
 }
 .main-nav li a:hover:after,
+.main-nav-li a:focus:after,
 .main-nav li.active a:after {
     width: 100%;
 }
-
 
 /* About Me
 -------------------*/
@@ -329,9 +326,11 @@ header {
             transition: 0.5s;
             a {
                 color: #4f4f4f;
-            }
+                
+            }  
         }
-        h3:hover {
+        h3:hover,
+        h3:focus {
             transform: scale(1.1)
         }    
     }
@@ -350,7 +349,13 @@ header {
 
 .contact-section-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    p {
+        margin: 50px;
+        text-align: center;
+    }
 }
 
 .contact-text-container {
@@ -359,6 +364,7 @@ header {
     justify-content: center;
     align-items: center;
     transition: 0.4s;
+    margin-top: 15px;
         &:hover {
             transform: scale(1.2);
         }

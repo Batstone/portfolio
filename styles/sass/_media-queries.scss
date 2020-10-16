@@ -62,6 +62,41 @@
 /* Landscape phones and down */
 @media (max-width: 640px) {
 
+    .header-mobile-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .mobile-nav {
+        display: block !important;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .main-nav ul {
+        margin-top: 10px !important;
+        position: absolute;
+    }
+
+    .main-nav li a {
+        font-size: calc(.52rem + .52vw) !important;
+        margin-left: 5px !important;
+    }
+
     .about-me-container {
         display: flex;
         flex-direction: column;
@@ -116,7 +151,6 @@
             }
         }
     }
-    
 }
 
 @media (max-width: 480px) {
