@@ -1,7 +1,6 @@
 @import 'setup';
 @import 'media-queries';
 
-
 /* Global styles
 ============== */
 
@@ -67,7 +66,7 @@ p {
 	margin: 0;
 }
 
-h1, h2, h4, h5, h6{
+h1, h2, h4 {
     font-weight: 400;
     color: #4f4f4f;
     text-transform:uppercase;
@@ -76,7 +75,6 @@ h1, h2, h4, h5, h6{
 
 h1 {
 	font-size: calc(1.8rem + 1.8vw);
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     line-height: 45px;
 }
@@ -89,7 +87,6 @@ h2 {
 h3 {
     font-size: calc(1.4rem + 1.4vw);
     color: #767676;
-
 }
 
 h4 {
@@ -123,7 +120,6 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 60px;
 }
 
@@ -139,10 +135,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-}
-
-.main-nav {
-    display: none;
 }
 
 .mobile-nav {
@@ -199,11 +191,13 @@ header {
     transition: all 0.3s ease 0s;
     width: 0;
 }
+
 .main-nav li a:hover,
 .main-nav li a:focus,
 .main-nav li.active a {
     color: #afafaf;
 }
+
 .main-nav li a:hover:after,
 .main-nav-li a:focus:after,
 .main-nav li.active a:after {
@@ -439,10 +433,12 @@ footer {
     transition: all 0.3s ease 0s;
     width: 0;
 }
+
 .footer-nav li a:hover,
 .footer-nav li.active a {
     color: #afafaf;
 }
+
 .footer-nav li a:hover:after,
 .fotter-nav li.active a:after {
     width: 100%;
