@@ -1,0 +1,145 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+    
+}
+
+@media (max-width: 870px) {
+    
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-nav-container {
+        order: 1;
+        margin-top: 25px;
+    }   
+
+    .social-icons-container { 
+        i {
+            margin: 20px;
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+    /* Portfolio 
+    -------------------*/
+        
+    .project-container {
+        flex-direction: column;
+        margin: 75px 0;
+        padding: 20px;
+        .project-image-container {
+            width: 100% !important;
+            overflow: hidden;
+        }
+        .project-text {
+            flex-direction: column;
+            width: 100% !important;
+            margin: 15px 10px !important;
+        
+            h3 {
+                margin-top: 15px;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+        }
+        .text-right {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+        .text-left {
+            margin-right: 0 !important;
+            text-align: center;
+        }
+    }  
+}
+
+/* Landscape phones and down */
+@media (max-width: 640px) {
+
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .about-me-text-container {
+        width: 100% !important;
+    }
+
+    
+    .about-me-text {
+        padding-right: 0 !important;
+        h1 {
+            margin-top: 39px !important;
+            text-align: center;
+        }
+        p {
+            margin: 30px 0;
+        }
+  
+        .about-me-button {
+            margin-top: 30px;
+            align-items: right;
+        }
+    }
+    .about-me-button-container {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+    .about-me-img-container {
+        width: 50% !important;
+        margin-top: 100px;
+    }
+    
+    .about-me-img-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-nav-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        nav {
+            margin-top: 40px;
+            li {
+                margin: 20px !important;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .about-me-img-container {
+        width: 75% !important;
+        margin-top: 100px;
+    }
+
+    .footer-nav-container {
+        nav {
+            li {
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+
+    .about-me-button-container {
+        justify-content: center;
+    }
+
+
+}

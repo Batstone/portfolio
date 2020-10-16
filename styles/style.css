@@ -230,6 +230,156 @@ html {
   padding: 0;
 }
 
+/* Portrait tablet and small desktops */
+@media (max-width: 870px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-nav-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 25px;
+  }
+  .social-icons-container i {
+    margin: 20px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  /* Portfolio 
+    -------------------*/
+  .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 75px 0;
+    padding: 20px;
+  }
+  .project-container .project-image-container {
+    width: 100% !important;
+    overflow: hidden;
+  }
+  .project-container .project-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    margin: 15px 10px !important;
+  }
+  .project-container .project-text h3 {
+    margin-top: 15px;
+  }
+  .project-container .project-text p {
+    margin-bottom: 15px;
+  }
+  .project-container .text-right {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .project-container .text-left {
+    margin-right: 0 !important;
+    text-align: center;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 640px) {
+  .about-me-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-me-text-container {
+    width: 100% !important;
+  }
+  .about-me-text {
+    padding-right: 0 !important;
+  }
+  .about-me-text h1 {
+    margin-top: 39px !important;
+    text-align: center;
+  }
+  .about-me-text p {
+    margin: 30px 0;
+  }
+  .about-me-text .about-me-button {
+    margin-top: 30px;
+    -webkit-box-align: right;
+        -ms-flex-align: right;
+            align-items: right;
+  }
+  .about-me-button-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .about-me-img-container {
+    width: 50% !important;
+    margin-top: 100px;
+  }
+  .about-me-img-container img {
+    width: 100%;
+    height: auto;
+  }
+  .footer-nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-nav-container nav {
+    margin-top: 40px;
+  }
+  .footer-nav-container nav li {
+    margin: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-img-container {
+    width: 75% !important;
+    margin-top: 100px;
+  }
+  .footer-nav-container nav li {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-me-button-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 /* Global styles
 ============== */
 body {
@@ -575,7 +725,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
+  width: 20%;
   margin: 30px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -766,7 +916,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 20%;
 }
 
 .footer-nav-container ul {
@@ -813,7 +962,7 @@ footer {
 .social-icons-container i {
   color: #fff;
   font-size: 30px;
-  margin-left: 70px;
+  margin-left: 20px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
