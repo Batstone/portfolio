@@ -433,7 +433,7 @@ button {
 
 button:hover,
 button:focus {
-  background-color: #208307;
+  background-color: #166901;
 }
 
 .wrapper {
@@ -766,6 +766,7 @@ header {
 .icon-container p {
   color: black;
   margin-top: 10px;
+  text-align: center;
 }
 
 /* Portfolio 

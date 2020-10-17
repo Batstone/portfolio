@@ -2,6 +2,7 @@ $(function () {
 
     $('.mobile-nav').on('click', () => {
         $('.js-nav').slideToggle(400)
+
     })
 
     // Add Scroll behaviour
@@ -18,4 +19,20 @@ $(function () {
             1000
         )
     })
+
+    $('.about-me-container').on('click', 'a[href^="#"]', function (e) {
+
+        e.preventDefault()
+
+        const $targetHref = $(this).attr('href')
+        $('html, body').animate(
+            {
+                scrollTop: $($targetHref).offset().top,
+            },
+            1000
+        )
+
+    })
+
+
 })

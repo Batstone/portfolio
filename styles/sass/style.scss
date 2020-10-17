@@ -30,7 +30,7 @@ button {
 
 button:hover,
 button:focus    {
-    background-color: #208307;
+    background-color: #166901;
 }
 
 .wrapper {
@@ -144,6 +144,10 @@ header {
         color: #4f4f4f
     }
 }
+
+// .mobile-nav-active {
+//     color: #208307
+// }
 
 .header-logo {
     font-size: calc(1.2rem + 1.2vw);
@@ -279,6 +283,7 @@ header {
     p {
         color: black;
         margin-top: 10px;
+        text-align: center;
     }
 }
 
