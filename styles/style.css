@@ -433,7 +433,7 @@ button {
 
 button:hover,
 button:focus {
-  background-color: #000000;
+  background-color: #208307;
 }
 
 .wrapper {
@@ -819,18 +819,37 @@ header {
 }
 
 .project-container .project-text h3 {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.project-container .project-text h3 a {
   color: #4f4f4f;
 }
 
-.project-container .project-text h3:hover,
-.project-container .project-text h3:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.project-container .button-container {
+  margin: 10px 0;
+}
+
+.project-container .button-container-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.project-container .button-container-right .button-right {
+  margin-left: 20px;
+}
+
+.project-container .button-container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.project-container .button-container-left .button-left {
+  margin-right: 20px;
 }
 
 .project-container .text-right {

@@ -1,7 +1,5 @@
 $(function () {
 
-    console.log('working')
-
     $('.mobile-nav').on('click', () => {
         $('.js-nav').slideToggle(400)
     })
