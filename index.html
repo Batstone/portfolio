@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae5be4dc98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" type="image/jpg" href="./assets/favicon/android-chrome-512x512.png" />
 
@@ -35,7 +36,7 @@
                 <div class="header-about-text">
                     <h3>Hello, my name is</h3>
                     <h1>Adam Batstone</h1>
-                    <h2>Web Developer</h2>
+                    <h4>Web Developer</h4>
                     <div class="header-button-container">
                         <a href="#projects"><button class="header-button">Download Resume</button></a>
                     </div>
@@ -53,7 +54,15 @@
         <section class="about-me-section" id="about">
             <div class="wrapper">
                 <div class="about-me-container">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                        <div class="horizontal-line">
+                            <div class="top"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
                     <div class="about-me-text-container">
+
                         <div class="about-me-text">
                             <p>I am a front-end web developer with a background in classical guitar performance. After
                                 completing my doctorate degree in music, I wanted to extend my passion for creativity
@@ -104,7 +113,7 @@
                         <p>REACT</p>
                     </li>
                     <li>
-                        <i class="fas fa-dollar-sign" aria-hidden="true"></i>
+                        <i class="devicon-jquery-plain"></i>
                         <p>jQUERY</p>
                     </li>
                     <li>
@@ -232,13 +241,26 @@
                     </div>
                 </div>
                 <div class="contact-section-container">
-                    <p>Let's build something together! Please contact me to discuss how we can bring your ideas to the
-                        web.</p>
-                    <a href="mailto:adam.batstone@gmail.com">
-                        <div class="contact-text-container">
-                            <i class="far fa-envelope" aria-hidden="true"></i>
-                            <h4>Connect with Me</h4>
-                        </div>
+                    <div class="contact-text-container">
+                        <p>Let's build something together! Please contact me to discuss how we can bring your ideas to
+                            the
+                            web.</p>
+                        <a href="mailto:adam.batstone@gmail.com">email: adam.batstone@gmail.com</a>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form>
+                            <label class="visuallyHidden" for="name">name</label>
+                            <input id="name" type="text" name="name" placeholder="Name" required="">
+                            <label class="visuallyHidden" for="email">wmail address</label>
+                            <input id="email" type="email" name="email" placeholder="E-mail" required="">
+                            <label class="visuallyHidden"></label>
+                            <textarea id="message" name="message" cols="30" rows="8" placeholder="Message"
+                                required=""></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+
+                    </div>
                     </a>
                 </div>
             </div>

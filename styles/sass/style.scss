@@ -30,7 +30,7 @@ button {
 
 button:hover,
 button:focus    {
-    background-color: #166901;
+    background-color: #35961d;
 }
 
 .wrapper {
@@ -90,7 +90,7 @@ h3 {
 }
 
 h4 {
-    font-size: calc(.7rem + .7vw);
+    font-size: calc(.9rem + .9vw);
 }
 
 .bg-color-1 {
@@ -105,7 +105,7 @@ h4 {
 -------------------*/
 
 .horizontal-line div {
-    background: #bcbcbc none repeat scroll 0 0;
+    background: #35961d none repeat scroll 0 0;
     height: 2px;
     margin: 5px auto;
     width: 77px;
@@ -120,7 +120,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
 }
 
 /* Header styles
@@ -214,19 +214,18 @@ header {
 .header-about-text {
     margin-right: 80px;
     h1 {
-        margin-top: 15px;
+        margin: 20px;
         color: #393939;
     }
-    h2 {
-        margin: 10px 0;
+    h4 {
+        margin-top: 30px;
         color: #208307;
     }
 }
 
-.header-button {
+.header-button-container {
     margin-top: 15px;
 }
-
 
 .header-img-container {
     width: 35%;
@@ -252,6 +251,7 @@ header {
 
 .about-me-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -313,7 +313,7 @@ header {
     display: flex;
     margin: 50px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255,255,255, 0.8);
     .project-image-container {
         width: 600px;
         overflow: hidden;
@@ -330,7 +330,11 @@ header {
         display: flex;
         flex-direction: column;
         width: 50%;
+        h3 {
+            margin: 10px 0;
+        }
         h4 {
+            color: #5bb445;
             margin-top: 15px;
         }
         p {
@@ -361,8 +365,6 @@ header {
         }
     }
   
-
-
     .text-right {
         margin-left: 50px;
         text-align: left;
@@ -378,40 +380,51 @@ header {
 
 .contact-section-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-        margin: 50px;
-        text-align: center;
-    }
 }
 
 .contact-text-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    margin-top: 15px;
-        &:hover {
-            transform: scale(1.2);
-        }
-    i {
-        color: #4f4f4f;
-        font-size: 60px;
-        transition: 0.4s;
-        &:hover {
-            color: #141414;
-        }
-    }
+    width: 50%;
+    margin-right: 40px;
     a {
         color: #4f4f4f;
-        font-size: 20px;
-        
+        margin-top: 20px;
+        font-size: calc(.7rem + .7vw);
     }
-    h4 {
-        margin: 20px;
+}
+
+.contact-form-container {
+    width: 50%;
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        input {
+            width: 100%;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        input[type=email] {
+            margin-top: 15px;
+        }
+        input::placeholder {
+            font-family: 'Poppins', sans-serif;
+        }
+        textarea {
+            width: 100%;
+            margin-top: 15px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        textarea::placeholder {
+            font-family: 'Poppins', sans-serif;
+        }
+        button {
+            width: 50%;
+            margin-top: 20px;
+        }
     }
 }
 
