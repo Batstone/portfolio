@@ -252,6 +252,46 @@ html {
 @media (max-width: 768px) {
   /* Portfolio 
     -------------------*/
+  header {
+    padding-bottom: 40px !important;
+  }
+  .header-profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-about-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .header-about-text h1 {
+    text-align: center;
+  }
+  .header-about-text h4 {
+    margin-top: 5px !important;
+    text-align: center;
+  }
+  .header-button-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    margin-top: 30px !important;
+  }
+  .header-img-container {
+    margin-top: 50px;
+    width: 75% !important;
+  }
   .project-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -284,6 +324,9 @@ html {
 
 /* Landscape phones and down */
 @media (max-width: 640px) {
+  header {
+    background-position: right;
+  }
   .header-mobile-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -346,22 +389,35 @@ html {
   }
   .about-me-text .about-me-button {
     margin-top: 30px;
-    -webkit-box-align: right;
-        -ms-flex-align: right;
-            align-items: right;
   }
   .about-me-button-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .about-me-img-container {
-    width: 50% !important;
-    margin-top: 100px;
+  .contact-section-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-text-container {
+    width: 100% !important;
+    margin: 20px 0 !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-text-container p {
+    text-align: center;
+  }
+  .contact-form-container {
+    width: 100% !important;
+    margin-top: 40px;
   }
   .footer-nav-container {
     -webkit-box-orient: vertical;
@@ -384,9 +440,20 @@ html {
 }
 
 @media (max-width: 480px) {
-  .about-me-img-container {
-    width: 75% !important;
-    margin-top: 100px;
+  .header-about-text h3 {
+    text-align: center;
+  }
+  .header-about-text h1 {
+    margin: 5px !important;
+  }
+  .header-about-text h4 {
+    margin-top: 10px !important;
+  }
+  .header-button-container {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-top: 20px !important;
   }
   .footer-nav-container nav li {
     margin: 0 !important;
@@ -463,8 +530,8 @@ a {
 p {
   font-family: 'Poppins', sans-serif;
   color: #767676;
-  font-size: calc(.6rem + .5vw);
-  line-height: 24px;
+  font-size: calc(.8rem + .8vw);
+  line-height: 30px;
   font-weight: 400;
   margin: 0;
 }
@@ -929,6 +996,13 @@ header {
   color: #4f4f4f;
   margin-top: 20px;
   font-size: calc(.7rem + .7vw);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-text-container a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact-form-container {

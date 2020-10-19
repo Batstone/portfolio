@@ -21,6 +21,40 @@
 
     /* Portfolio 
     -------------------*/
+
+    header {
+        padding-bottom: 40px !important;
+
+    }
+
+    .header-profile {
+        flex-direction: column;
+    }
+
+    .header-about-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 !important;
+        h1 {
+            text-align: center;
+        }
+        h4 {
+            margin-top: 5px !important;
+            text-align: center;
+        }
+    }
+
+    .header-button-container {
+        display: flex !important;
+        justify-content: flex-end !important;
+        margin-top: 30px !important;
+    }
+
+    .header-img-container {
+        margin-top: 50px;
+        width: 75% !important;
+    }
         
     .project-container {
         flex-direction: column;
@@ -54,6 +88,10 @@
 
 /* Landscape phones and down */
 @media (max-width: 640px) {
+    
+    header {
+        background-position: right;
+    }
 
     .header-mobile-container {
         display: flex;
@@ -108,21 +146,33 @@
   
         .about-me-button {
             margin-top: 30px;
-            align-items: right;
         }
     }
 
     .about-me-button-container {
         width: 100%;
         display: flex;
-        justify-content: right;
+        justify-content: center;
     }
 
-    .about-me-img-container {
-        width: 50% !important;
-        margin-top: 100px;
+    .contact-section-container {
+        flex-direction: column;
     }
-    
+
+    .contact-text-container {
+        width: 100% !important;
+        margin: 20px 0 !important;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+    }
+
+    .contact-form-container {
+        width: 100% !important;
+        margin-top: 40px;
+    }
+
     .footer-nav-container {
         flex-direction: column;
         justify-content: center;
@@ -134,14 +184,26 @@
             }
         }
     }
-
 }
 
 @media (max-width: 480px) {
 
-    .about-me-img-container {
-        width: 75% !important;
-        margin-top: 100px;
+    
+    .header-about-text {
+        h3 {
+            text-align: center;
+        }
+        h1 {
+            margin: 5px !important;
+        }
+        h4 {
+            margin-top: 10px !important;
+        }
+    }
+
+    .header-button-container {
+        justify-content: center !important;
+        margin-top: 20px !important;
     }
 
     .footer-nav-container {
