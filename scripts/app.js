@@ -3,6 +3,10 @@ $(function () {
     $('.mobile-nav').on('click', () => {
         $('.js-nav').slideToggle(400)
 
+        $('.js-menu')
+            .toggleClass('mobile-nav-icon')
+            .toggleClass('mobile-nav-icon-active')
+
     })
 
     // Add Scroll behaviour
@@ -31,8 +35,5 @@ $(function () {
             },
             1000
         )
-
     })
-
-
 })
