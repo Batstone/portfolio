@@ -166,11 +166,16 @@ header {
 
 .mobile-nav {
     display: none;
+    background: none;
+    &:hover,
+    &:focus {
+        background: none;
+    }
 }
 
 .mobile-nav-icon {
     font-size: 30px;
-    color: #4f4f4f
+    color: #4f4f4f;
 }
 
 .mobile-nav-icon-active {

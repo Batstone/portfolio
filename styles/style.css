@@ -647,6 +647,11 @@ header {
 
 .mobile-nav {
   display: none;
+  background: none;
+}
+
+.mobile-nav:hover, .mobile-nav:focus {
+  background: none;
 }
 
 .mobile-nav-icon {
