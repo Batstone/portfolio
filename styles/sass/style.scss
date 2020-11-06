@@ -32,7 +32,7 @@ button:focus    {
     background-color: #35961d;
 }
 
-.wrapper {
+.wrapper {  
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
@@ -58,13 +58,14 @@ nav {
 }
 
 .link {
+    text-align: center;
     text-decoration: none;
     background-color: #393939;
     text-transform: uppercase;
     color: #fff;
 	border: 0 none;
 	border-radius: 5px;
-    font-size: 18px;
+    font-size: calc(.8rem + .8vw);
     font-weight: 900;
     margin-top: 10px;
     padding: 10px 30px;
@@ -96,7 +97,7 @@ h1, h2, h4 {
 }
 
 h1 {
-	font-size: calc(1.8rem + 1.8vw);
+	font-size: calc(1.6rem + 1.6vw);
     font-weight: 700;
     line-height: 45px;
 }
@@ -250,19 +251,19 @@ header {
 }
 
 .header-about-text {
-    margin-right: 80px;
+    margin-right: 60px;
     h1 {
-        margin: 20px;
+        margin-top: 40px;
         color: #393939;
     }
     h4 {
-        margin-top: 10px;
+        margin-top: 20px;
         color: #208307;
     }
 }
 
 .header-link-container {
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 .header-img-container {
@@ -538,14 +539,16 @@ footer {
     width: 100%;
 }
 
-.social-icons-container { 
+.social-icons-container {  
     i {
         color: #fff;
         font-size: 30px;
         margin-left: 20px;
         transition: 0.2s;
-        &:hover {
+        &:hover,
+        &:focus {
             transform: scale(1.3);
+            color:#5bb445;
         }
     }
 }
