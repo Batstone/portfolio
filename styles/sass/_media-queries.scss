@@ -1,4 +1,33 @@
 @media (max-width: 870px) {
+
+    .project-container {
+        flex-direction: column;
+        margin: 75px 0;
+        .project-image-container {
+            width: 100% !important;
+        }
+
+        .project-text {
+            width: 100% !important;
+            margin: 15px 10px !important;
+            h3 {
+                margin-top: 15px;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+        }
+
+        .text-right {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        .text-left {
+            margin-right: 0 !important;
+            text-align: center;
+        }
+    }  
     
     .footer-container {
         flex-direction: column;
@@ -60,35 +89,6 @@
         margin-top: 50px;
         width: 75% !important;
     }
-        
-    .project-container {
-        flex-direction: column;
-        margin: 75px 0;
-        .project-image-container {
-            width: 100% !important;
-        }
-
-        .project-text {
-            width: 100% !important;
-            margin: 15px 10px !important;
-            h3 {
-                margin-top: 15px;
-            }
-            p {
-                margin-bottom: 15px;
-            }
-        }
-
-        .text-right {
-            margin-left: 0 !important;
-            text-align: center;
-        }
-
-        .text-left {
-            margin-right: 0 !important;
-            text-align: center;
-        }
-    }  
 }
 
 /* Landscape phones and down */
@@ -144,6 +144,7 @@
     }
 
     .about-me-text {
+        margin-bottom: 10px !important;
         padding-right: 0 !important;
         p {
             margin: 30px 0;
@@ -198,9 +199,15 @@
     }
 
     .header-link-container {
+        margin-top: 0 !important;
         display: flex !important;
         justify-content: center !important;
         text-align: center !important;
+    }
+
+    .header-img-container {
+        margin-top: 20px !important;
+        width: 75% !important;
     }
 
     .header-about-text {

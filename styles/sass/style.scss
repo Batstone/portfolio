@@ -84,7 +84,7 @@ p {
 	font-family: 'Poppins', sans-serif;
 	color: #767676;
 	font-size: calc(.8rem + .8vw);
-	line-height: 30px;
+	line-height: calc(1.2rem + 1.2vw);
 	font-weight: 400;
 	margin: 0;
 }
@@ -301,6 +301,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .about-me-text {
+        margin-bottom: 40px;
+    }
+
 }
 
 .about-me-link-container {
@@ -354,7 +358,7 @@ header {
 
 .project-container {
     display: flex;
-    margin: 50px 0;
+    margin: 70px 0;
     padding: 20px;
     background-color: rgba(255,255,255, 0.8);
     .project-image-container {
@@ -409,11 +413,11 @@ header {
     }
   
     .text-right {
-        margin-left: 50px;
+        margin-left: 40px;
         text-align: left;
     }
     .text-left {
-        margin-right: 50px;
+        margin-right: 40px;
         text-align: right;
     }
 }
