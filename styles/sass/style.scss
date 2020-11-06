@@ -70,7 +70,8 @@ nav {
     padding: 10px 30px;
 	-webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: #5bb445;
     }
 }

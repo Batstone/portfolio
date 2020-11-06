@@ -539,7 +539,7 @@ nav a {
   transition: all 0.3s ease 0s;
 }
 
-.link:hover {
+.link:hover, .link:focus {
   background-color: #5bb445;
 }
 
