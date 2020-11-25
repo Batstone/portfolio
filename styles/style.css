@@ -356,12 +356,7 @@ html {
     display: block !important;
   }
   .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-items: center;
     width: 100%;
     display: none;
   }
