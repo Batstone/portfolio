@@ -4,10 +4,6 @@
     .project-container {
         flex-direction: column;
         margin: 75px 0;
-        .project-image-container {
-            width: 100%;
-        }
-
         .project-text {
             width: 100%;
             margin: 15px 10px;
@@ -119,19 +115,14 @@
     }
 
     .main-nav {
-        justify-items: center;
-        width: 100%;
         display: none;
+        width: 100%;
+        justify-content: center;
     }
 
     .main-nav ul {
         margin-top: 10px;
         position: absolute;
-    }
-
-    .main-nav li a {
-        // font-size: calc(.52rem + .52vw) !important;
-        margin-left: 5px;
     }
 
     .about-me-container {
@@ -225,6 +216,10 @@
     .header-button-container {
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .main-nav ul > li + li {
+        margin-left: 20px;
     }
 
     .about-me-text {

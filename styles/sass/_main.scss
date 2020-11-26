@@ -33,9 +33,9 @@ section {
 }
 
 .wrapper {  
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
 }
 
 .bg-color-1 {
@@ -198,8 +198,17 @@ header {
     100%{   color: #208307; }
 }
 
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
 .main-nav ul {
     display: flex;
+}
+
+.main-nav ul > li + li {
+    margin-left: 50px;
 }
 
 .main-nav li a {
@@ -207,8 +216,6 @@ header {
     color: #777777;
     font-weight: 800;
     line-height: 40px;
-    padding: 0 10px;
-    margin-left: 60px;
     position: relative;
 	letter-spacing: 1.8px;
 }
@@ -474,7 +481,6 @@ header {
         }
     }
 }
-
 
 /* FOOTER */
 

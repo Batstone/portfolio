@@ -1,16 +1,22 @@
 $(function () {
 
+    // adding clikc functionality to hamburger menu
     $('.mobile-nav').on('click', () => {
-        $('.js-nav').slideToggle(400)
+
 
         $('.js-menu')
             .toggleClass('mobile-nav-icon')
             .toggleClass('mobile-nav-icon-active')
 
+
+        if ($('.main-nav').css('display') === 'none') {
+            $('.main-nav').css('display', 'flex')
+        } else {
+            $('.main-nav').css('display', 'none')
+        }
     })
 
-    // Add Scroll behaviour
-    // from https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+    // Scroll behaviour with anchor tags
     $('nav').on('click', 'a[href^="#"]', function (e) {
 
         e.preventDefault()
