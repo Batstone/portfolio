@@ -1,15 +1,16 @@
+
 @media (max-width: 870px) {
 
     .project-container {
         flex-direction: column;
         margin: 75px 0;
         .project-image-container {
-            width: 100% !important;
+            width: 100%;
         }
 
         .project-text {
-            width: 100% !important;
-            margin: 15px 10px !important;
+            width: 100%;
+            margin: 15px 10px;
             h3 {
                 margin-top: 15px;
             }
@@ -19,12 +20,12 @@
         }
 
         .text-right {
-            margin-left: 0 !important;
+            margin-left: 0;
             text-align: center;
         }
 
         .text-left {
-            margin-right: 0 !important;
+            margin-right: 0;
             text-align: center;
         }
     }  
@@ -52,7 +53,7 @@
     -------------------*/
 
     header {
-        padding-bottom: 40px !important;
+        padding-bottom: 40px;
 
     }
 
@@ -61,7 +62,7 @@
     }
 
     .header-link-container {
-        margin-top: 20px !important;
+        margin-top: 20px;
         text-align: right;
     }
 
@@ -69,25 +70,25 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 0 !important;
+        margin: 0;
         h1 {
             text-align: center;
         }
         h4 {
-            margin-top: 5px !important;
+            margin-top: 5px;
             text-align: center;
         }
     }
 
     .header-button-container {
-        display: flex !important;
-        justify-content: flex-end !important;
-        margin-top: 30px !important;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
     }
 
     .header-img-container {
         margin-top: 50px;
-        width: 75% !important;
+        width: 75%;
     }
 }
 
@@ -110,11 +111,11 @@
     }
 
     .header-link-container {
-        margin-top: 10px !important;
+        margin-top: 10px;
     }
 
     .mobile-nav {
-        display: block !important;
+        display: block;
     }
 
     .main-nav {
@@ -124,13 +125,13 @@
     }
 
     .main-nav ul {
-        margin-top: 10px !important;
+        margin-top: 10px;
         position: absolute;
     }
 
     .main-nav li a {
         // font-size: calc(.52rem + .52vw) !important;
-        margin-left: 5px !important;
+        margin-left: 5px;
     }
 
     .about-me-container {
@@ -139,12 +140,12 @@
     }
 
     .about-me-text-container {
-        width: 100% !important;
+        width: 100%;
     }
 
     .about-me-text {
-        margin-bottom: 10px !important;
-        padding-right: 0 !important;
+        margin-bottom: 10px;
+        padding-right: 0;
         p {
             margin: 30px 0;
         }
@@ -161,8 +162,8 @@
     }
 
     .contact-text-container {
-        width: 100% !important;
-        margin: 20px 0 !important;
+        width: 100%;
+        margin: 20px 0;
         align-items: center;
         p {
             text-align: center;
@@ -170,7 +171,7 @@
     }
 
     .contact-form-container {
-        width: 100% !important;
+        width: 100%;
         margin-top: 40px;
     }
 
@@ -181,7 +182,7 @@
         nav {
             margin-top: 40px;
             li {
-                margin: 20px !important;
+                margin: 20px;
             }
         }
     }
@@ -190,7 +191,7 @@
 @media (max-width: 480px) {
 
     section {
-        padding: 30px 0 !important;
+        padding: 30px 0;
     }
 
     h2 {
@@ -198,15 +199,15 @@
     }
 
     .header-link-container {
-        margin-top: 0 !important;
-        display: flex !important;
-        justify-content: center !important;
-        text-align: center !important;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     .header-img-container {
-        margin-top: 20px !important;
-        width: 75% !important;
+        margin-top: 20px;
+        width: 75%;
     }
 
     .header-about-text {
@@ -214,16 +215,16 @@
             text-align: center;
         }
         h1 {
-            margin: 5px !important;
+            margin: 5px;
         }
         h4 {
-            margin-top: 10px !important;
+            margin-top: 10px;
         }
     }
 
     .header-button-container {
-        justify-content: center !important;
-        margin-top: 20px !important;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .about-me-text {
@@ -231,51 +232,50 @@
     }
 
     .project-text h3 {
-        margin-top: 20px !important;
+        margin-top: 20px;
     }
     
     .project-container {
-        margin: 70px 0 !important;
-        justify-content: center !important;
-        align-items: center !important;    
+        margin: 70px 0;
+        justify-content: center;
+        align-items: center;    
         .text-right {
-            margin: 0 !important;
-            text-align: center !important;
+            margin: 0;
+            text-align: center;
         }
         .text-left {
-            margin: 0 !important;
-            text-align: center !important;
+            margin: 0;
+            text-align: center;
         }
     }  
  
     .link-container-right {
         display: flex;
-        justify-content: center !important;
+        justify-content: center;
         .link-right {
-            margin-left: 0 !important;
+            margin-left: 0;
         }
     }
 
     .link-container-left {
         display: flex;
-        justify-content: center !important;
+        justify-content: center;
         .link-left {
-            margin-right: 0 !important;
+            margin-right: 0;
         }
     }
 
     .link {
-        margin: 40px 25px !important;
+        margin: 40px 25px;
     }
 
     .footer-nav-container {
         nav {
             li {
-                margin: 0 !important;
+                margin: 0;
             }
         }
     }
-
 }
 
 @media (max-width: 380px) {
@@ -285,8 +285,8 @@
     }
 
     .footer-nav li a {
-        letter-spacing: 1px !important;
-        padding: 0 5px !important;
+        letter-spacing: 1px;
+        padding: 0 5px;
     }
 
 }
