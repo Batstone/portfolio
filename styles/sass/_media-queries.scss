@@ -4,6 +4,9 @@
     .project-container {
         flex-direction: column;
         margin: 75px 0;
+        .project-image-container {
+            width: 100%;
+        }
         .project-text {
             width: 100%;
             margin: 15px 10px;
@@ -13,6 +16,14 @@
             p {
                 margin-bottom: 15px;
             }
+        }
+
+        .link-container-left {
+            justify-content: center;
+        }
+
+        .link-container-right {
+            justify-content: center;
         }
 
         .text-right {
@@ -86,6 +97,8 @@
         margin-top: 50px;
         width: 75%;
     }
+
+    
 }
 
 /* Landscape phones and down */
@@ -244,26 +257,6 @@
         }
     }  
  
-    .link-container-right {
-        display: flex;
-        justify-content: center;
-        .link-right {
-            margin-left: 0;
-        }
-    }
-
-    .link-container-left {
-        display: flex;
-        justify-content: center;
-        .link-left {
-            margin-right: 0;
-        }
-    }
-
-    .link {
-        margin: 40px 25px;
-    }
-
     .footer-nav-container {
         nav {
             li {

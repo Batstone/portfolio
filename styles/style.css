@@ -281,7 +281,7 @@ section {
 p {
   font-family: 'Poppins', sans-serif;
   color: #767676;
-  font-size: calc(.8rem + .8vw);
+  font-size: calc(.6rem + .6vw);
   line-height: calc(1.2rem + 1.2vw);
   font-weight: 400;
   margin: 0;
@@ -994,6 +994,9 @@ footer {
             flex-direction: column;
     margin: 75px 0;
   }
+  .project-container .project-image-container {
+    width: 100%;
+  }
   .project-container .project-text {
     width: 100%;
     margin: 15px 10px;
@@ -1003,6 +1006,16 @@ footer {
   }
   .project-container .project-text p {
     margin-bottom: 15px;
+  }
+  .project-container .link-container-left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-container .link-container-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .project-container .text-right {
     margin-left: 0;
@@ -1248,31 +1261,6 @@ footer {
   .project-container .text-left {
     margin: 0;
     text-align: center;
-  }
-  .link-container-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .link-container-right .link-right {
-    margin-left: 0;
-  }
-  .link-container-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .link-container-left .link-left {
-    margin-right: 0;
-  }
-  .link {
-    margin: 40px 25px;
   }
   .footer-nav-container nav li {
     margin: 0;
