@@ -286,7 +286,7 @@ section {
 }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 1080px;
   margin: 0 auto;
   width: 80%;
 }
@@ -410,20 +410,11 @@ ul {
 header {
   padding-bottom: 80px;
   position: relative;
-}
-
-header::before {
   background-image: url(../../assets/images/3440061.jpg);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.849)), color-stop(rgba(240, 240, 240, 0.116)), to(white)), url(../../assets/images/3440061.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.849), rgba(240, 240, 240, 0.116), white), url(../../assets/images/3440061.jpg);
-  background-position: bottom right;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  -webkit-animation: rotate 60s infinite;
-          animation: rotate 60s infinite;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), color-stop(#f0f0f0), to(rgba(223, 223, 223, 0.384))), url(../../assets/images/3440061.jpg);
+  background-image: linear-gradient(to bottom, #f3f3f3, #f0f0f0, rgba(223, 223, 223, 0.384)), url(../../assets/images/3440061.jpg);
+  background-position: right;
+  height: 100vh;
 }
 
 @-webkit-keyframes rotate {
@@ -542,8 +533,8 @@ header::before {
 }
 
 .header__img:hover {
-  -webkit-box-shadow: 10px 10px 5px #141414;
-          box-shadow: 10px 10px 5px #141414;
+  -webkit-box-shadow: 5px 5px 5px #141414;
+          box-shadow: 5px 5px 5px #141414;
 }
 
 .header__img img {
@@ -596,8 +587,8 @@ header::before {
 /* ABOUT ME */
 .about {
   background-image: url(../../assets/images/3440061.jpg);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.849)), color-stop(rgba(240, 240, 240, 0.116)), to(white)), url(../../assets/images/3440061.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.849), rgba(240, 240, 240, 0.116), white), url(../../assets/images/3440061.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), color-stop(#f0f0f0), to(rgba(223, 223, 223, 0.384))), url(../../assets/images/3440061.jpg);
+  background-image: linear-gradient(to bottom, #f3f3f3, #f0f0f0, rgba(223, 223, 223, 0.384)), url(../../assets/images/3440061.jpg);
   background-position: bottom left;
   padding-top: 80px;
 }
@@ -727,8 +718,8 @@ header::before {
 /* PORTFOLIO */
 .portfolio {
   background-image: url(../../assets/images/3440061.jpg);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.849)), color-stop(rgba(240, 240, 240, 0.116)), to(white)), url(../../assets/images/3440061.jpg);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.849), rgba(240, 240, 240, 0.116), white), url(../../assets/images/3440061.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), color-stop(#f0f0f0), to(rgba(223, 223, 223, 0.384))), url(../../assets/images/3440061.jpg);
+  background-image: linear-gradient(to bottom, #f3f3f3, #f0f0f0, rgba(223, 223, 223, 0.384)), url(../../assets/images/3440061.jpg);
   background-position: left;
 }
 
