@@ -13,7 +13,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins&display=swap');
+
+/* MIXINS */
+@mixin background($position) {
+    background-image: url(../../assets/images/3440061.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.849), rgba(240, 240, 240, 0.116), rgb(255, 255, 255)),url(../../assets/images/3440061.jpg);
+    background-position: $position;
+}
 
 html {
     font-size: 62.5%;
@@ -21,3 +29,5 @@ html {
     margin: 0;
     padding: 0;
 }
+
+

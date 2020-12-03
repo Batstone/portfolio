@@ -1,5 +1,8 @@
 $(function () {
 
+    // Animate on scroll initialization
+    AOS.init();
+
     // adding click functionality to hamburger menu
     $('.header__mobile-icon-container').on('click', () => {
         $('.js-menu')
@@ -10,13 +13,13 @@ $(function () {
             $('.header__nav').css('display', 'flex')
         } else {
             $('.header__nav').css('display', 'none')
-        }
-    })
+        };
+    });
 
     // Scroll behaviour with anchor tags
     $('nav').on('click', 'a[href^="#"]', function (e) {
 
-        e.preventDefault()
+        e.preventDefault();
 
         const $targetHref = $(this).attr('href')
         $('html, body').animate(
@@ -24,12 +27,12 @@ $(function () {
                 scrollTop: $($targetHref).offset().top,
             },
             1000
-        )
-    })
+        );
+    });
 
     $('.about__container').on('click', 'a[href^="#"]', function (e) {
 
-        e.preventDefault()
+        e.preventDefault();
 
         const $targetHref = $(this).attr('href')
         $('html, body').animate(
@@ -37,6 +40,6 @@ $(function () {
                 scrollTop: $($targetHref).offset().top,
             },
             1000
-        )
+        );
     })
-})
+});
