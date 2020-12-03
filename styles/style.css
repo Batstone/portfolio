@@ -408,11 +408,44 @@ ul {
 
 /* HEADER */
 header {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+header::before {
   background-image: url(../../assets/images/3440061.jpg);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.849)), color-stop(rgba(240, 240, 240, 0.116)), to(white)), url(../../assets/images/3440061.jpg);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.849), rgba(240, 240, 240, 0.116), white), url(../../assets/images/3440061.jpg);
-  background-position: right;
-  padding-bottom: 80px;
+  background-position: bottom right;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -webkit-animation: rotate 60s infinite;
+          animation: rotate 60s infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .header {

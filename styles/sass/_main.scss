@@ -144,9 +144,28 @@ ul {
 /* HEADER */
 
 header {
-    @include background(right);
     padding-bottom: 80px;
+    position: relative;
 }
+
+header::before {
+    @include background(bottom right);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: rotate 60s infinite;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 .header {
     display: flex;
