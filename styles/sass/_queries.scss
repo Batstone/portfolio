@@ -1,0 +1,121 @@
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        &__profile {
+            flex-direction: column;
+        }
+        &__text {
+            width: 100%;
+        }
+        &__resume {
+            margin-bottom: 60px;
+        }
+        &__img {
+            width: 50%;
+        }
+    }
+    
+    .project {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        &__img {
+            width: 90%;
+            img {
+                width: 100%;
+                margin: 10px 0;
+            }   
+        }
+        &__text {
+            width: 90%;     
+        }
+        &__text--right {
+            text-align: left;
+        }
+        &__links {
+            margin: 25px 0;
+        }
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        width: 100%;
+        &__nav-container {
+            width: 100%;
+            justify-content: space-around;
+        }
+        &__icons {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    
+    .header {
+        flex-direction: column;
+        &__mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        &__mobile-icon-container {
+            display: block;
+            padding-top: 8px;
+        }
+        &__nav {
+            display: none;
+            width: 80%;
+            justify-content: center;
+            position: absolute;
+            top: 17%;
+        }
+        &__list {
+            width: 80%;
+            justify-content: space-between;
+        }
+        &__link {
+            margin: 0;
+        }
+    }
+
+    .contact {
+        flex-direction: column; 
+        &__text {
+            width: 90%;
+        }
+        &__form-container {
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+
+    .header {
+        &__list {
+            width: 100%;
+        }
+        &__link {
+            margin: 0;
+        }
+    }
+    
+    .footer {
+        flex-direction: column-reverse;
+        &__nav-container {
+            flex-direction: column;
+        }
+        &__logo {
+            margin-bottom: 25px;
+        }
+    }
+}
