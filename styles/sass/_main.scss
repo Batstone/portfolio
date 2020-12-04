@@ -146,8 +146,28 @@ ul {
 header {
     padding-bottom: 80px;
     position: relative;
-    @include background(right);
+    z-index: 1;
     height: 100vh;
+    overflow: hidden;
+    &::after {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background: url("http://placekitten.com/800/1200");
+        background-size: cover;
+        content: '';
+        z-index: -1;
+        bottom: 20%;
+        position: absolute;
+        background: url(../../assets/images/3440061.jpg) center;
+        box-shadow: inset 200px 100px 40px 0px rgb(255, 255, 255), 
+        inset -200px -100px 100px 0px rgb(255, 255, 255), 
+        inset 20px -10px 100px 0px white, 
+        inset -200px 300px 100px 0px white;
+        background-position: right;
+        animation: rotate 10s infinite;
+        -webkit-animation: rotate 70s infinite;
+    }
 }
 
 @keyframes rotate {
