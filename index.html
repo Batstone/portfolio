@@ -18,72 +18,78 @@
 
 <body>
     <!---HEADER--->
-    <header id="home">
-        <div class="wrapper">
-            <div class="header">
-                <div class="header__mobile">
-                    <h2 class="header__logo">AB<span>.</span></h2>
-                    <button class="header__mobile-icon-container"><i class="fas fa-bars js-menu header__mobile-icon"
-                            title="Hamburger Menu"></i></button>
-                    <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
-                </div>
-                <!---MAIN NAVIGATION--->
-                <nav class="header__nav js-nav">
-                    <ul class="header__list">
-                        <li class="header__link"><a class="nav__link" href="#home">Home</a></li>
-                        <li class="header__link"><a class="nav__link" href="#about">About</a></li>
-                        <li class="header__link"><a class="nav__link" href="#projects">Projects</a></li>
-                        <li class="header__link"><a class="nav__link" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="background">
+        <header id="home">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="header__top">
+                        <div class="header__mobile">
+                            <h2 class="header__logo">AB<span>.</span></h2>
+                            <button class="header__mobile-icon-container"><i
+                                    class="fas fa-bars js-menu header__mobile-icon" title="Hamburger Menu"></i></button>
+                            <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
+                        </div>
+                        <!---MAIN NAVIGATION--->
+                        <nav class="header__nav js-nav">
+                            <ul class="header__list">
+                                <li class="header__link"><a class="nav__link" href="#home">Home</a></li>
+                                <li class="header__link"><a class="nav__link" href="#about">About</a></li>
+                                <li class="header__link"><a class="nav__link" href="#projects">Projects</a></li>
+                                <li class="header__link"><a class="nav__link" href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
 
-            <!---HEADER TEXT--->
-            <div class="header__profile">
-                <div class="header__text">
-                    <h1>Adam Batstone</h1>
-                    <h4>Web Developer</h4>
+                    <div class="header__icons">
+                        <a href="https://www.linkedin.com/in/adam-batstone-5537581b5/" target="_blank"><i
+                                class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">Adam Batstone -
+                                LinkedIn</span></a>
+                        <a href="https://twitter.com/aBst0ne" target="_blank"><i class="fab fa-twitter"
+                                aria-hidden="true"></i><span class="sr-only">Adam Batstone - Twitter</span></a>
+                        <a href="https://github.com/Batstone" target="_blank"><i class="fab fa-github"
+                                aria-hidden="true"></i><span class="sr-only">Adam Batstone - Github</span></a>
+                    </div>
+                </div>
+
+                <!---HEADER TEXT--->
+                <div class="header__profile">
+                    <div class="header__img">
+                        <img src="./assets/images/portfolio-headshot-min.jpg" width="419" height="750"
+                            alt="A headshot of the web devleoper, Adam Batstone">
+                    </div>
+                    <div class="header__text">
+                        <h1>Adam Batstone</h1>
+                        <div class="header__titles">
+                            <h4>{ Software Developer }</h4>
+                            <h4>{ Artist && Educator }</h4>
+                        </div>
+                        <p>I am a software developer based in Hamilton ON, with a background in classical music
+                            performance.</p>
+                        <p>After completing my
+                            doctorate degree in music I extended my passion for creativity into the field of
+                            programming. I am dedicated to creating responsive,
+                            accessible,
+                            user-friendly applications.</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="header__links-container">
                     <div class="header__resume">
                         <a class="link" href="./assets/Adam-Batstone-Resume.pdf" target="_blank">
                             Resume
                         </a>
                     </div>
-                </div>
-                <div class="header__img">
-                    <img src="./assets/images/portfolio-headshot-min.jpg" width="419" height="750"
-                        alt="A headshot of the web devleoper, Adam Batstone">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-
-        <!---ABOUT ME--->
-        <section class="about" id="about">
-            <div class="wrapper">
-                <div class="section__title">
-                    <h2>About Me</h2>
-                    <div class="top"></div>
-                    <div class="bottom"></div>
-                </div>
-
-                <!--ABOUT ME TEXT-->
-                <div class="about__text-container">
-                    <div class="about__text">
-                        <p>I am a front-end web developer with a background in classical guitar performance. After
-                            completing my doctorate degree in music, I wanted to extend my passion for creativity
-                            and
-                            learning to the field of web development. I am dedicated to creating responsive,
-                            accessible,
-                            user-friendly web applications.</p>
-                    </div>
-                    <div class="about__link-container">
+                    <div class="header__work">
                         <a class="link" href="#projects">My Work</a>
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </header>
+
+    <main>
+
+
 
         <!---SKILLS--->
         <section class="skills" id="skills">
@@ -97,36 +103,45 @@
                 <!---ICONS--->
                 <ul class="skills__container" data-aos="fade-up">
                     <li class="skills__item">
-                        <i class="fab fa-html5" aria-hidden="true"></i>
-                        <p>HTML5</p>
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                        <p>React</p>
                     </li>
                     <li class="skills__item">
-                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                        <p>CSS3</p>
-                    </li>
-                    <li class="skills__item">
-                        <i class="fab fa-sass" aria-hidden="true"></i>
-                        <p>Sass</p>
-                    </li>
-                    <li class="skills__item">
-                        <i class="fab fa-js" aria-hidden="true"></i>
-                        <p>JavaScript</p>
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                        <p>React Native</p>
                     </li>
                     <li class="skills__item">
                         <i class="devicon-jquery-plain"></i>
                         <p>jQUERY</p>
                     </li>
                     <li class="skills__item">
-                        <i class="fab fa-react" aria-hidden="true"></i>
-                        <p>REACT</p>
+                        <i class="fab fa-js" aria-hidden="true"></i>
+                        <p>JavaScript</p>
                     </li>
                     <li class="skills__item">
                         <i class="fas fa-fire" aria-hidden="true"></i>
                         <p>Firebase</p>
                     </li>
+
+                    <li class="skills__item">
+                        <i class="fab fa-sass" aria-hidden="true"></i>
+                        <p>Sass</p>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                        <p>HTML5</p>
+                    </li>
                     <li class="skills__item">
                         <i class="fab fa-git-alt" aria-hidden="true"></i>
                         <p>Git</p>
+                    </li>
+                    <li class="skills__item">
+                        <i class="fab fa-figma"></i>
+                        <p>Figima</p>
                     </li>
                     <li class="skills__item">
                         <i class="fas fa-universal-access" aria-hidden="true"></i>
@@ -151,15 +166,38 @@
 
                 <!---PROJECT CONTAINER--->
                 <div class="project" data-aos="zoom-out">
+                    <div class="project__text project__text--right">
+                        <div class="project__logo">
+                            <img class="project__weather-sense-logo" src="./assets/images/weather-sense-logo.png"
+                                alt="logo for the weather sense web application">
+                        </div>
+                        <h4>HTML | CSS | Jquery | REST API</h4>
+                        <p>What's the weather? Search for any location to find up to date hourly and daily forecasts.
+                        </p>
+                        <div class="project__links">
+                            <a class="link" href="https://batstone.github.io/weather-sense/" target="_blank">Live</a>
+                            <a class="link" href="https://github.com/Batstone/weather-sense" target="_blank">Github</a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <img src="./assets/images/weather-sense.jpg"
+                            alt="The stylish and sleek main page of the Mixologie application.">
+                    </div>
+                </div>
+
+                <div class="project" data-aos="zoom-out">
                     <div class="project__img">
                         <img src="./assets/images/Guitar.JPG" alt="The landing page of the Guitar Chords application.">
                     </div>
                     <div class="project__text">
-                        <h3>Guitar Chords</h3>
+                        <div class="project__logo">
+                            <img class="project__guitar-chords-logo" src="./assets/images/guitar-chords-logo.png"
+                                alt="logo for the guitar chords web application">
+                        </div>
                         <h4>HTML | CSS | Javascript</h4>
                         <p>The Guitar Chords application features a fully interactive fretboard purely made in CSS.
                             Users can select a chord, play the audio of the full strummed chord, or hover over the
-                            individual strings to hear the individual notes.
+                            individual strings to hear individual notes.
                         </p>
                         <div class="project__links">
                             <a class="link" href="https://batstone.github.io/guitar-chords/" target="_blank">Live</a>
@@ -170,7 +208,10 @@
 
                 <div class="project" data-aos="zoom-out">
                     <div class="project__text project__text--right">
-                        <h3>Mixologi&eacute;</h3>
+                        <div class="project__logo">
+                            <img class="project__mixologie-logo" src="./assets/images/mixologie-logo.png"
+                                alt="logo for the mixologie web application">
+                        </div>
                         <h4>HTML | CSS | Jquery | REST API</h4>
                         <p>Looking to fix the perfect cocktail? Mixologie is a stylish application made to
                             help you find the perfect recipe for any occasion!</p>
@@ -180,7 +221,7 @@
                         </div>
                     </div>
                     <div class="project__img">
-                        <img src="./assets/images/Mixologie..JPG"
+                        <img src="./assets/images/Mixologie.jpg"
                             alt="The stylish and sleek main page of the Mixologie application.">
                     </div>
                 </div>
@@ -190,11 +231,14 @@
                         <img src="./assets/images/trivia-time.JPG" alt="The start screen of the Trivia Time app.">
                     </div>
                     <div class="project__text">
-                        <h3>Trivia Time!</h3>
+                        <div class="project__logo">
+                            <img class="project__trivia-time-logo" src="./assets/images/trivia-time-logo.png"
+                                alt="logo for the mixologie web application">
+                        </div>
                         <h4>HTML | CSS | REACT | REST API</h4>
-                        <p> Compete against your friends while racing the clock in this exciting trivia game. This
-                            application allows users to select from a number of trivia categories, to
-                            test their knowledge in a fun educational game.
+                        <p> Compete against your friends while racing the clock in this exciting trivia game. Select
+                            from a number of trivia categories to
+                            test your knowledge.
                         </p>
                         <div class="project__links">
                             <a class="link" href="https://thegloriousalpacas.github.io/trivia-time/"
@@ -204,7 +248,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="project" data-aos="zoom-out">
                     <div class="project__text project__text--right">
                         <h3>Music Notes</h3>
@@ -221,6 +264,22 @@
                             alt="The landing page of the Music Notes application">
                     </div>
                 </div>
+                <div class="project" data-aos="zoom-out">
+                    <div class="project__img">
+                        <img src="./assets/images/artist-site.JPG" alt="The start screen of the Trivia Time app.">
+                    </div>
+                    <div class="project__text">
+                        <h3>Artist Website</h3>
+                        <h4>HTML | CSS | jQuery</h4>
+                        <p> A unique, interactive, fully responsive deisgn created for a musician.
+                        </p>
+                        <div class="project__links">
+                            <a class="link" href="https://www.johnaulabaugh.com" target="_blank">Live</a>
+                            <a class="link" href="https://github.com/Batstone/artist-site" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -242,19 +301,6 @@
                             the
                             web.</p>
                         <a href="mailto:adam.batstone@gmail.com">email: adam.batstone@gmail.com</a>
-                    </div>
-
-                    <div class="contact__form-container">
-                        <form class="contact__form" action="https://submit-form.com/vh4qy58UxT43Y_J351SMn">
-                            <label class="visuallyHidden" for="name">name</label>
-                            <input id="name" type="text" name="name" placeholder="Name" required="">
-                            <label class="visuallyHidden" for="email">wmail address</label>
-                            <input id="email" type="email" name="email" placeholder="E-mail" required="">
-                            <label class="visuallyHidden"></label>
-                            <textarea id="message" name="message" cols="30" rows="8" placeholder="Message"
-                                required=""></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
                     </div>
                 </div>
             </div>
