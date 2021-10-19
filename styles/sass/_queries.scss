@@ -4,6 +4,30 @@
     }
 }
 
+@media (max-width: 860px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .project {
+        &__weather-sense-logo {
+            width: 250px;
+        }
+        &__guitar-chords-logo {
+            width: 250px;
+        }
+        &__mixologie-logo {
+            width:  200px;
+            margin-bottom: -5px;
+        }
+        &__trivia-time-logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
 
     header {
@@ -18,15 +42,24 @@
     .header {
         &__profile {
             flex-direction: column;
+            margin-top: 100px;
+        }
+        &__img {
+            order: 2;
+            margin-top: 35px;
         }
         &__text {
-            width: 100%;
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
         }
         &__resume {
             margin-bottom: 60px;
         }
         &__img {
             width: 50%;
+            margin: 0 auto;
+            margin-top: 55px;
         }
     }
     
@@ -34,35 +67,40 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        &__logo {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
         &__img {
+            order: 3;
             width: 90%;
+            margin-top: 20px;
             img {
                 width: 100%;
                 margin: 10px 0;
             }   
         }
         &__text {
-            width: 90%;     
+            width: 85%;
+            text-align: center;     
         }
-        &__text--right {
-            text-align: left;
-        }
+       
         &__links {
             margin: 25px 0;
         }
     }
 
     .footer {
-        flex-direction: column-reverse;
-        width: 100%;
         &__nav-container {
             width: 100%;
             justify-content: space-around;
+            margin-top: 25px;
         }
         &__icons {
-            width: 30%;
+            width: 20%;
             justify-content: space-between;
-            margin-bottom: 25px;
             i {
                 margin-left: 0;
             }
@@ -100,6 +138,9 @@
         &__link {
             margin: 0;
         }
+        &__text {
+            width: 100%;
+        }
     }
 
     .contact {
@@ -115,7 +156,6 @@
 }
 
 @media (max-width: 540px) {
-
     header {
         &::after {
             box-shadow: inset 50px 50px 40px 0px rgb(255, 255, 255), 
@@ -140,34 +180,39 @@
     .about {
         padding-top: 25px;
     }
-    
+
     .footer {
-        flex-direction: column-reverse;
-        &__nav-container {
-            flex-direction: column;
-        }
-        &__logo {
-            margin-bottom: 25px;
-        }
-        &__link {
-            margin-left: 0;
-        }
         &__icons {
-            width: 50%;
+            width: 30%;
         }
     }
+
+   
 }
 
-@media (max-width: 380px) {
+@media (max-width: 475px) {
 
-    .footer {
-        &__list {
-            flex-direction: column;
-            align-items: center;
-        }
-        &__link {
-            margin-top: 15px;
-        };
+    html {
+        font-size: 50%;
     }
+
+  .footer {
+      &__nav-container {
+          margin-top: 0;
+      }
+      &__list {
+          flex-direction: column;
+          align-items: center;
+      }
+      &__link {
+        margin: 10px 0;
+      }
+      &__social {
+          margin-top: 25px;
+      }
+      &__icons {
+        width: 40%;
+    }
+  }
 
 }

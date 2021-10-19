@@ -29,17 +29,4 @@ $(function () {
             1000
         );
     });
-
-    $('.about__container').on('click', 'a[href^="#"]', function (e) {
-
-        e.preventDefault();
-
-        const $targetHref = $(this).attr('href')
-        $('html, body').animate(
-            {
-                scrollTop: $($targetHref).offset().top,
-            },
-            1000
-        );
-    })
 });

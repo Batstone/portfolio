@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!--FAVICON-->
     <link rel="shortcut icon" type="image/jpg" href="./assets/favicon/android-chrome-512x512.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Adam Batstone</title>
 </head>
 
@@ -33,7 +35,7 @@
                         <nav class="header__nav js-nav">
                             <ul class="header__list">
                                 <li class="header__link"><a class="nav__link" href="#home">Home</a></li>
-                                <li class="header__link"><a class="nav__link" href="#about">About</a></li>
+                                <li class="header__link"><a class="nav__link" href="#skills">Skills</a></li>
                                 <li class="header__link"><a class="nav__link" href="#projects">Projects</a></li>
                                 <li class="header__link"><a class="nav__link" href="#contact">Contact</a></li>
                             </ul>
@@ -63,34 +65,25 @@
                             <h4>{ Software Developer }</h4>
                             <h4>{ Artist && Educator }</h4>
                         </div>
-                        <p>I am a software developer based in Hamilton ON, with a background in classical music
+                        <p>I am a software developer based in Hamilton, Ontario, with a background in classical music
                             performance.</p>
                         <p>After completing my
                             doctorate degree in music I extended my passion for creativity into the field of
                             programming. I am dedicated to creating responsive,
                             accessible,
-                            user-friendly applications.</p>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="header__links-container">
-                    <div class="header__resume">
+                            user-friendly applications, while providing a unique user experience.</p>
                         <a class="link" href="./assets/Adam-Batstone-Resume.pdf" target="_blank">
                             Resume
                         </a>
                     </div>
-                    <div class="header__work">
-                        <a class="link" href="#projects">My Work</a>
-                    </div>
                 </div>
             </div>
+            <a href="#skills" class="arrow-link"><i class="fas fa-chevron-down"></i></a>
+        </header>
     </div>
-    </header>
+
 
     <main>
-
-
-
         <!---SKILLS--->
         <section class="skills" id="skills">
             <div class="wrapper">
@@ -187,7 +180,8 @@
 
                 <div class="project" data-aos="zoom-out">
                     <div class="project__img">
-                        <img src="./assets/images/Guitar.JPG" alt="The landing page of the Guitar Chords application.">
+                        <img src="./assets/images/guitar-chords.JPG"
+                            alt="The landing page of the Guitar Chords application.">
                     </div>
                     <div class="project__text">
                         <div class="project__logo">
@@ -221,7 +215,7 @@
                         </div>
                     </div>
                     <div class="project__img">
-                        <img src="./assets/images/Mixologie.jpg"
+                        <img src="./assets/images/mixologie.jpg"
                             alt="The stylish and sleek main page of the Mixologie application.">
                     </div>
                 </div>
@@ -260,7 +254,7 @@
                         </div>
                     </div>
                     <div class="project__img">
-                        <img src="./assets/images/Music-notes.JPG"
+                        <img src="./assets/images/music-notes.JPG"
                             alt="The landing page of the Music Notes application">
                     </div>
                 </div>
@@ -269,9 +263,11 @@
                         <img src="./assets/images/artist-site.JPG" alt="The start screen of the Trivia Time app.">
                     </div>
                     <div class="project__text">
-                        <h3>Artist Website</h3>
+                        <div class="project__logo">
+                            <h3>Artist Website</h3>
+                        </div>
                         <h4>HTML | CSS | jQuery</h4>
-                        <p> A unique, interactive, fully responsive deisgn created for a musician.
+                        <p> A unique, interactive, fully responsive design created for a musician.
                         </p>
                         <div class="project__links">
                             <a class="link" href="https://www.johnaulabaugh.com" target="_blank">Live</a>
@@ -284,7 +280,6 @@
         </section>
 
         <!---CONTACT--->
-
         <section id="contact">
             <div class="wrapper">
                 <div class="section__title">
@@ -294,13 +289,16 @@
                 </div>
 
                 <!---CONTACT TEXT--->
-
                 <div class="contact">
                     <div class="contact__text">
                         <p>Let's build something together! Please contact me to discuss how we can bring your ideas to
                             the
                             web.</p>
                         <a href="mailto:adam.batstone@gmail.com">email: adam.batstone@gmail.com</a>
+                        <p>If I'm not coding or studying I'm usually practicing classical guitar or arranging music.
+                            Please check out my <a href="https://www.youtube.com/c/ClassicalGuitarYoutube"
+                                target="_blank">youtube
+                                channel</a>.</p>
                     </div>
                 </div>
             </div>
@@ -313,30 +311,28 @@
         <div class="wrapper">
             <div class="footer">
                 <div class="footer__nav-container">
-                    <h2 class="footer__logo">AB<span>.</span></h2>
-
                     <!--FOOTER NAV-->
-
                     <nav>
                         <ul class=footer__list>
                             <li class="footer__link"><a class="nav__link" href="#home">Home</a></li>
-                            <li class="footer__link"><a class="nav__link" href="#about">About</a></li>
+                            <li class="footer__link"><a class="nav__link" href="#skills">Skills</a></li>
                             <li class="footer__link"><a class="nav__link" href="#projects">Projects</a></li>
                             <li class="footer__link"><a class="nav__link" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-
                 <!---SOCIAL MEDIA ICONS--->
-
-                <div class="footer__icons">
-                    <a href="https://github.com/Batstone" target="_blank"><i class="fab fa-github"
-                            aria-hidden="true"></i><span class="sr-only">Adam Batstone - Github</span></a>
-                    <a href="https://twitter.com/aBst0ne" target="_blank"><i class="fab fa-twitter"
-                            aria-hidden="true"></i><span class="sr-only">Adam Batstone - Twitter</span></a>
-                    <a href="https://www.linkedin.com/in/adam-batstone-5537581b5/" target="_blank"><i
-                            class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">Adam Batstone -
-                            LinkedIn</span></a>
+                <div class="footer__social">
+                    <h2 class="footer__logo">AB<span>.</span></h2>
+                    <div class="footer__icons">
+                        <a href="https://github.com/Batstone" target="_blank"><i class="fab fa-github"
+                                aria-hidden="true"></i><span class="sr-only">Adam Batstone - Github</span></a>
+                        <a href="https://twitter.com/aBst0ne" target="_blank"><i class="fab fa-twitter"
+                                aria-hidden="true"></i><span class="sr-only">Adam Batstone - Twitter</span></a>
+                        <a href="https://www.linkedin.com/in/adam-batstone-5537581b5/" target="_blank"><i
+                                class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">Adam Batstone -
+                                LinkedIn</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,6 +341,7 @@
         </div>
     </footer>
 
+    <script src="https://kit.fontawesome.com/ae5be4dc98.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
