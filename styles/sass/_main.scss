@@ -44,7 +44,7 @@ section {
 /* TYPOGRAPHY */
 
 body {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #5c5c5c;
     line-height: 1.5;
 }
@@ -150,7 +150,7 @@ ul {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
     &::after {
         width: 130vw;
         height: 120vh;
@@ -208,13 +208,7 @@ ul {
             background: none;
         }
     }
-    &__icons {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 10px;
-        a {
-            margin-left: 40px;
-        }
+    &__social-icons {
         i {
             color: #fff;
             font-size: 3.2rem;
@@ -225,6 +219,21 @@ ul {
                 transform: scale(1.3);
                 color:#5bb445;
             }
+        }
+    }
+    &__icons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        a {
+            margin-left: 40px;
+        }
+    }
+    &__social-icons-mobile {
+        display: none;
+        margin: 20px 0;
+        i {
+            margin: 0 20px;
         }
     }
     &__mobile-icon {
@@ -243,11 +252,12 @@ ul {
         justify-content: space-around;
         margin-top: 200px;
         padding: 25px 0;
+        background-color: rgba(114, 114, 114, 0.062);
     }
     &__text {
         width: 45%;
         h1 {
-            font-size: 4.8rem;
+            font-size: 4.6rem;
             font-weight: 700;
             color: #393939;
             line-height: 5rem;
@@ -255,9 +265,6 @@ ul {
         }
         p {
             margin-bottom: 30px;
-        }
-        a {
-            margin-top: 25px;
         }
     }
     &__titles {
@@ -271,9 +278,6 @@ ul {
     &__img {
         width: 40%;
         transition: 0.5s;
-        &:hover {
-            box-shadow: 5px 5px 5px #141414;
-        }
         img {
             width: 100%;
             height: auto;
@@ -283,7 +287,7 @@ ul {
 
 .fa-chevron-down {
     position: absolute;
-    left: 50%;
+    left: 43%;
     font-size: 5rem;
     color: #3d3d3d;
     animation: bounce .5s ease-in-out infinite alternate;
@@ -363,13 +367,13 @@ ul {
     padding: 40px 0;
     margin: 40px 0;
     &__weather-sense-logo {
-        width: 350px;
+        width: 300px;
     }
     &__guitar-chords-logo {
-        width: 350px;
+        width: 300px;
     }
     &__mixologie-logo {
-        width:  300px;
+        width:  250px;
         margin-bottom: -15px;
     }
     &__trivia-time-logo {
@@ -472,6 +476,7 @@ footer {
     }   
     &__list {
         display: flex;
+        margin-bottom: 35px;
     }
     &__link {
         a {
@@ -482,10 +487,12 @@ footer {
     }
     &__icons {
         display: flex;
+        a {
+            margin-left: 40px;
+        }
         i {
             color: #fff;
             font-size: 3rem;
-            margin-left: 30px;
             transition: 0.2s;
             &:hover,
             &:focus {

@@ -98,13 +98,6 @@
             justify-content: space-around;
             margin-top: 25px;
         }
-        &__icons {
-            width: 20%;
-            justify-content: space-between;
-            i {
-                margin-left: 0;
-            }
-        }
     }
 }
 
@@ -114,6 +107,9 @@
         position: relative;
         flex-direction: column;
         padding-top: 0;
+        &__top {
+            flex-direction: column;
+        }
         &__mobile {
             display: flex;
             justify-content: space-between;
@@ -122,25 +118,39 @@
         }
         &__mobile-icon-container {
             display: block;
-            padding-top: 8px;
         }
         &__nav {
             display: none;
-            width: 80%;
-            justify-content: center;
-            position: absolute;
-            top: 100%;
+            margin-top: 25px;
         }
         &__list {
-            width: 80%;
-            justify-content: space-between;
+            width: 100%;
+            justify-content: center;
         }
         &__link {
             margin: 0;
         }
-        &__text {
-            width: 100%;
+        &__icons {
+            display: none;
         }
+        &__social-icons-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__titles {
+            margin-bottom: 35px;
+        }
+        &__text {
+            width: 95%;
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .nav__link {
+        margin: 10px;
     }
 
     .contact {
@@ -156,6 +166,12 @@
 }
 
 @media (max-width: 540px) {
+    .background {
+        &::after {
+            bottom: 5%;
+        }
+    }
+
     header {
         &::after {
             box-shadow: inset 50px 50px 40px 0px rgb(255, 255, 255), 
@@ -168,26 +184,24 @@
     .header {
         &__list {
             width: 100%;
+            flex-direction: column;
+            text-align: center;
         }
         &__link {
-            margin: 0;
+            margin: 10px 0;
         }
         &__img {
             width: 60%;
         }
     }
 
+    .arrow-link {
+        display: none;
+    }
+
     .about {
         padding-top: 25px;
     }
-
-    .footer {
-        &__icons {
-            width: 30%;
-        }
-    }
-
-   
 }
 
 @media (max-width: 475px) {
@@ -198,21 +212,28 @@
 
   .footer {
       &__nav-container {
-          margin-top: 0;
+          margin: 0;
       }
       &__list {
           flex-direction: column;
           align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
       }
       &__link {
         margin: 10px 0;
       }
+      &__logo {
+        order: 2;
+      }
       &__social {
-          margin-top: 25px;
+          flex-direction: column;
       }
       &__icons {
-        width: 40%;
+        margin-bottom: 15px;
+          a {
+              margin: 25px;
+          }
+      }
     }
-  }
-
 }
