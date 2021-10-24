@@ -31,13 +31,22 @@
                                     class="fas fa-bars js-menu header__mobile-icon" title="Hamburger Menu"></i></button>
                             <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
                         </div>
+
                         <!---MAIN NAVIGATION--->
                         <nav class="header__nav js-nav">
                             <ul class="header__list">
-                                <li class="header__link"><a class="nav__link" href="#home">Home</a></li>
-                                <li class="header__link"><a class="nav__link" href="#skills">Skills</a></li>
-                                <li class="header__link"><a class="nav__link" href="#projects">Projects</a></li>
-                                <li class="header__link"><a class="nav__link" href="#contact">Contact</a></li>
+                                <li class="header__link"><a class="nav__link" href="#home">Home</a>
+                                    <p class="header__link--active link--active">.</p>
+                                </li>
+                                <li class="header__link"><a class="nav__link" href="#skills">Skills</a>
+                                    <p class="header__link--active link--active">.</p>
+                                </li>
+                                <li class="header__link"><a class="nav__link" href="#projects">Projects</a>
+                                    <p class="header__link--active link--active">.</p>
+                                </li>
+                                <li class="header__link"><a class="nav__link" href="#contact">Contact</a>
+                                    <p class="header__link--active link--active">.</p>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -57,7 +66,7 @@
 
                 <!---HEADER TEXT--->
                 <div class="header__profile">
-                    <div class="header__img">
+                    <div data-tilt class="header__img">
                         <img src="./assets/images/portfolio-headshot-min.jpg" width="419" height="750"
                             alt="A headshot of the web devleoper, Adam Batstone">
                     </div>
@@ -172,8 +181,8 @@
                 </div>
 
                 <!---PROJECT CONTAINER--->
-                <div class="project" data-aos="zoom-out">
-                    <div class="project__text project__text--right">
+                <div class="project" data-aos="fade-right">
+                    <div class="project__text project__text-right">
                         <div class="project__logo">
                             <img class="project__weather-sense-logo" src="./assets/images/weather-sense-logo.png"
                                 alt="logo for the weather sense web application">
@@ -186,17 +195,17 @@
                             <a class="link" href="https://github.com/Batstone/weather-sense" target="_blank">Github</a>
                         </div>
                     </div>
-                    <div class="project__img">
+                    <div data-tilt class="project__img">
                         <img src="./assets/images/weather-sense.JPG"
                             alt="The stylish and sleek main page of the Mixologie application.">
                     </div>
                 </div>
-                <div class="project" data-aos="zoom-out">
-                    <div class="project__img">
+                <div class="project" data-aos="fade-left">
+                    <div data-tilt class="project__img">
                         <img src="./assets/images/guitar-chords.jpg"
                             alt="The landing page of the Guitar Chords application.">
                     </div>
-                    <div class="project__text">
+                    <div class="project__text project__text-left">
                         <div class="project__logo">
                             <img class="project__guitar-chords-logo" src="./assets/images/guitar-chords-logo.png"
                                 alt="logo for the guitar chords web application">
@@ -213,8 +222,8 @@
                     </div>
                 </div>
 
-                <div class="project" data-aos="zoom-out">
-                    <div class="project__text project__text--right">
+                <div class="project" data-aos="fade-right">
+                    <div class="project__text project__text-right">
                         <div class="project__logo">
                             <img class="project__mixologie-logo" src="./assets/images/mixologie-logo.png"
                                 alt="logo for the mixologie web application">
@@ -227,17 +236,17 @@
                             <a class="link" href="https://github.com/Batstone/mixologie" target="_blank">Github</a>
                         </div>
                     </div>
-                    <div class="project__img">
+                    <div data-tilt class="project__img">
                         <img src="./assets/images/mixologie.JPG"
                             alt="The stylish and sleek main page of the Mixologie application.">
                     </div>
                 </div>
 
-                <div class="project" data-aos="zoom-out">
-                    <div class="project__img">
+                <div class="project" data-aos="fade-left">
+                    <div data-tilt class="project__img">
                         <img src="./assets/images/trivia-time.JPG" alt="The start screen of the Trivia Time app.">
                     </div>
-                    <div class="project__text">
+                    <div class="project__text project__text-left">
                         <div class="project__logo">
                             <img class="project__trivia-time-logo" src="./assets/images/trivia-time-logo.png"
                                 alt="logo for the mixologie web application">
@@ -255,8 +264,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="project" data-aos="zoom-out">
-                    <div class="project__text project__text--right">
+                <div class="project" data-aos="fade-right">
+                    <div class="project__text project__text-right">
                         <h3>Music Notes</h3>
                         <h4>HTML | CSS | REACT | FIREBASE</h4>
                         <p>Take notes during your music rehearsals and track your progress on specific repertoire.
@@ -266,16 +275,16 @@
                             <a class="link" href="https://github.com/Batstone/music-notes" target="_blank">Github</a>
                         </div>
                     </div>
-                    <div class="project__img">
+                    <div data-tilt class="project__img">
                         <img src="./assets/images/music-notes.JPG"
                             alt="The landing page of the Music Notes application">
                     </div>
                 </div>
-                <div class="project" data-aos="zoom-out">
-                    <div class="project__img">
+                <div class="project" data-aos="fade-left">
+                    <div data-tilt class="project__img">
                         <img src="./assets/images/artist-site.JPG" alt="The start screen of the Trivia Time app.">
                     </div>
-                    <div class="project__text">
+                    <div class="project__text project__text-left">
                         <div class="project__logo">
                             <h3>Artist Website</h3>
                         </div>
@@ -288,12 +297,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!---CONTACT--->
-        <section id="contact">
+        <section class="contact">
             <div class="wrapper">
                 <div class="section__title">
                     <h2>Contact</h2>
@@ -302,7 +310,7 @@
                 </div>
 
                 <!---CONTACT TEXT--->
-                <div class="contact">
+                <div class="contact__info">
                     <div class="contact__text">
                         <p>Let's build something together! Please contact me to discuss how we can bring your ideas to
                             the
@@ -327,10 +335,18 @@
                     <!--FOOTER NAV-->
                     <nav>
                         <ul class=footer__list>
-                            <li class="footer__link"><a class="nav__link" href="#home">Home</a></li>
-                            <li class="footer__link"><a class="nav__link" href="#skills">Skills</a></li>
-                            <li class="footer__link"><a class="nav__link" href="#projects">Projects</a></li>
-                            <li class="footer__link"><a class="nav__link" href="#contact">Contact</a></li>
+                            <li class="footer__link"><a class="nav__link" href="#home">Home</a>
+                                <p class="footer__link--active link--active">.</p>
+                            </li>
+                            <li class="footer__link"><a class="nav__link" href="#skills">Skills</a>
+                                <p class="footer__link--active link--active">.</p>
+                            </li>
+                            <li class="footer__link"><a class="nav__link" href="#projects">Projects</a>
+                                <p class="footer__link--active link--active">.</p>
+                            </li>
+                            <li class="footer__link"><a class="nav__link" href="#contact">Contact</a>
+                                <p class="footer__link--active link--active">.</p>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -360,6 +376,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./scripts/tilt.jquery.js"></script>
     <script src="./scripts/app.js"></script>
 </body>
 

@@ -3,6 +3,18 @@ $(function () {
     // Animate on scroll initialization
     AOS.init();
 
+
+
+    $(".nav__link").on("focus mouseenter", function () {
+        $(this).next('.header__link--active').css('display', 'block');
+        $(this).next('.footer__link--active').css('display', 'block');
+    });
+
+    $(".nav__link").on("mouseleave focusout", function () {
+        $(this).next('.header__link--active').css('display', 'none');
+        $(this).next('.footer__link--active').css('display', 'none');
+    })
+
     // adding click functionality to hamburger menu
     $('.header__mobile-icon-container').on('click', () => {
         $('.js-menu')
@@ -29,4 +41,6 @@ $(function () {
             1000
         );
     });
+
+
 });

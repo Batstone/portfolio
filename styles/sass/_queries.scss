@@ -43,7 +43,15 @@
         &__profile {
             flex-direction: column;
             margin-top: 100px;
-        }
+                &:before {
+                    width: 150%;
+                    height: 80%;
+                    top: 0%;
+                    left: -10%;
+                    background: linear-gradient(to top, rgba(114, 114, 114, 0.13), #c7181800);
+                }
+            }
+        
         &__img {
             order: 2;
             margin-top: 35px;
@@ -63,6 +71,7 @@
         }
     }
     
+    
     .project {
         flex-direction: column;
         align-items: center;
@@ -79,14 +88,21 @@
             margin-top: 20px;
             img {
                 width: 100%;
-                margin: 10px 0;
             }   
         }
         &__text {
             width: 85%;
             text-align: center;     
         }
-       
+        &__text-right, &__text-left {
+            &:before {
+                width: 120%;
+                height: 80%;
+                top: -10%;
+                left: 0%;
+                background: linear-gradient(to top, rgba(114, 114, 114, 0.281), #00000000);
+            }
+        }
         &__links {
             margin: 25px 0;
         }
@@ -172,6 +188,12 @@
         }
     }
 
+    .wrapper {
+        width: 100%;
+    }
+
+
+
     header {
         &::after {
             box-shadow: inset 50px 50px 40px 0px rgb(255, 255, 255), 
@@ -182,6 +204,9 @@
     }
 
     .header {
+        &__top {
+            padding: 0 10px;
+        }
         &__list {
             width: 100%;
             flex-direction: column;
@@ -190,50 +215,49 @@
         &__link {
             margin: 10px 0;
         }
-        &__img {
-            width: 60%;
-        }
     }
 
     .arrow-link {
         display: none;
     }
 
-    .about {
-        padding-top: 25px;
-    }
+  .project {
+      &__img {
+          width: 100%;
+      }
+  }
+
+    .footer {
+        &__nav-container {
+            margin: 0;
+        }
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        &__link {
+          margin: 10px 0;
+        }
+        &__logo {
+          order: 2;
+        }
+        &__social {
+            flex-direction: column;
+        }
+        &__icons {
+          margin-bottom: 15px;
+            a {
+                margin: 25px;
+            }
+        }
+      }
 }
 
 @media (max-width: 475px) {
 
     html {
         font-size: 50%;
-    }
-
-  .footer {
-      &__nav-container {
-          margin: 0;
-      }
-      &__list {
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 15px;
-      }
-      &__link {
-        margin: 10px 0;
-      }
-      &__logo {
-        order: 2;
-      }
-      &__social {
-          flex-direction: column;
-      }
-      &__icons {
-        margin-bottom: 15px;
-          a {
-              margin: 25px;
-          }
-      }
     }
 }
