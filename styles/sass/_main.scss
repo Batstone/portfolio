@@ -1,12 +1,12 @@
 /* GLOBAL STYLES */
 body {
-	font-family: 'Poppins', sans-serif;
-    color: #4f4f4f;
+	font-family: $pff;
+    color: $sc;
     background-color: #fff;
 }
 
 button {
-    background-color: #393939;
+    background-color: $pcd;
     text-transform: uppercase;
     color: #fff;
 	border: 0 none;
@@ -19,9 +19,8 @@ button {
 
 button:hover,
 button:focus    {
-    background-color: #35961d;
+    background-color: $ac;
 }
-
 
 .wrapper {  
     max-width: 1080px;
@@ -34,15 +33,15 @@ button:focus    {
 
 body {
     font-size: 1.8rem;
-    color: #5c5c5c;
+    color: $pc;
     line-height: 1.5;
 }
 
 h1, h2, h3, h4 {
     font-weight: 400;
-    color: #4f4f4f;
+    color: $sc;
     text-transform:uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $sff;
 }
 
 h3 {
@@ -55,7 +54,6 @@ ul {
 
 section {
     margin: 100px 0 100px 0;
-  
 }
 
 
@@ -70,7 +68,7 @@ section {
     text-transform: uppercase;
     line-height: 1;
     text-decoration: none;
-    color: #5c5c5c;;
+    color: $pc;
     transition: .2s;
     &:hover,
     &:focus {
@@ -89,7 +87,7 @@ section {
     transition: all 0.3s ease 0s;
     &:hover,
     &:focus {
-        background-color: #208307;
+        background-color: $ac;
     }
 }
 
@@ -97,7 +95,7 @@ section {
     z-index: -1;
     position: absolute;
     font-size: 7rem;
-    color: #208307;
+    color: $ac;
     animation: color-shift 1.5s infinite;
 }
 
@@ -117,14 +115,14 @@ section {
 }
 
 .bottom {
-    background: #35961d none repeat scroll 0 0;
+    background: $ac none repeat scroll 0 0;
     height: 2px;
     margin: 5px auto 40px auto;
     width: 77px;
 }
   
   .top {
-    background: #35961d none repeat scroll 0 0;
+    background: $ac none repeat scroll 0 0;
     height: 2px;
     margin: 0px auto;
     width: 44px;
@@ -144,17 +142,14 @@ section {
         width: 150vw;
         height: 150vh;
         position: absolute;
-        background-size: cover;
         content: '';
         z-index: -10;
-        bottom: -15%;
-        left: -15%;
+        bottom: 0%;
         background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0.63), rgb(255, 255, 255)), url(../../assets/images/3440061.jpg) center;
-        background-repeat: none;
         background-size: cover;
         background-position: right;
         transform: rotate(185deg);
-        animation: rotate 100s;
+        animation: rotate 100s infinite;
     }
     &::before {
         width: 150vw;
@@ -167,21 +162,13 @@ section {
     }
 }
 
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
 .header {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     position: relative;
     &__link {
+        position: relative;
         margin-left: 40px;
         display: flex;
         flex-direction: column;
@@ -189,8 +176,9 @@ section {
         z-index: 10;
     }
     &__link--active {
+        position: absolute;
         display: none;
-        bottom: 52%;
+        bottom: 5px;
     }
     &__top {
         display: flex;
@@ -202,7 +190,7 @@ section {
         span {
             font-size: 8rem;
             line-height: 1rem;
-            color: #208307;
+            color: $ac;
             animation: color-shift 1.5s infinite;
         }
     }
@@ -223,7 +211,7 @@ section {
             &:hover,
             &:focus {
                 transform: scale(1.3);
-                color:#5bb445;
+                color:$ac;
             }
         }
     }
@@ -244,11 +232,11 @@ section {
     }
     &__mobile-icon {
         font-size: 3rem;
-        color: #4f4f4f;
+        color: $sc;
     }
     &__mobile-icon--active {
         font-size: 3rem;
-        color: #208307;
+        color: $ac;
     }
     &__list {
         display: flex;
@@ -256,7 +244,7 @@ section {
     &__profile {
         display: flex;
         justify-content: space-around;
-        margin-top: 275px;
+        margin-top: 225px;
         padding: 25px 0;
         position: relative;
         &:before {
@@ -276,7 +264,7 @@ section {
         h1 {
             font-size: 4.6rem;
             font-weight: 700;
-            color: #393939;
+            color:$pcd;
             line-height: 5rem;
             margin-bottom: 5px;
         }
@@ -294,7 +282,7 @@ section {
         h4 {
             line-height: 3rem;
             font-size: 2.5rem;
-            color: #208307;
+            color: $ac;
         }
     }
     &__img {
@@ -312,7 +300,7 @@ section {
     position: absolute;
     left: calc(50% - 21.85px);
     font-size: 5rem;
-    color: #35961d;
+    color: $ac;
     animation: bounce .5s ease-in-out infinite alternate;
 }
 
@@ -341,10 +329,10 @@ section {
         }
         i {
             font-size: 6rem;
-            color: #4f4f4f;
+            color: $sc;
             transition: 0.4s;
             &:hover {
-                color: #141414;
+                color: black;
             }
         }
         p {
@@ -368,7 +356,6 @@ section {
 .project {
     display: flex;
     justify-content: space-around;
-    // background-color: rgba(114, 114, 114, 0.062);
     padding: 40px 0;
     margin: 60px 0;
     &__weather-sense-logo {
@@ -403,10 +390,10 @@ section {
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 5px;
-            color: rgb(58, 58, 58);
+            color: $sc;
         }
         h4 {
-            color: #208307
+            color: $ac
         }
         p {
             margin: 10px 0;
@@ -464,7 +451,7 @@ section {
             margin-top: 50px;
         }
         a {
-        color: #208307;
+        color: $ac;
         text-decoration: none;
         }
         a:hover {
@@ -477,7 +464,7 @@ section {
 /* FOOTER */
 
 footer {
-    background-color: #4f4f4f;
+    background-color: $sc;
 }
 
 .footer {
@@ -495,7 +482,7 @@ footer {
         color: #fff;
         font-size: 4rem;
         span {
-            color: #208307;
+            color: $ac;
             font-size: 8rem;
             line-height: 1rem;
             animation: color-shift 1.5s infinite;
@@ -513,6 +500,7 @@ footer {
         margin-bottom: 35px;
     }
     &__link {
+        position: relative;
         z-index: 10;
         display: flex;
         flex-direction: column;
@@ -524,8 +512,9 @@ footer {
         }
     }
     &__link--active {
-        top: 12%;
+        position: absolute;
         display: none;
+        bottom: 5px;
     }
     &__icons {
         display: flex;
@@ -539,7 +528,7 @@ footer {
             &:hover,
             &:focus {
                 transform: scale(1.3);
-                color:#5bb445;
+                color:$ac;
             }
         }
     }
@@ -567,6 +556,15 @@ footer {
     80%{    color: #5bb445; }
     100%{   color: #208307; }
 }
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 @keyframes bounce {
     from {
