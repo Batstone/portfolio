@@ -305,7 +305,6 @@ section {
 }
 
 
-
 /* SKILLS */
 
 .skills {
@@ -372,8 +371,10 @@ section {
         width: 100px;
         margin-bottom: 10px;
     }
+    &__music-notes-logo {
+        width: 350px;
+    }
     &__img {
-       
         width: 45%;
         box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.644);
         img {

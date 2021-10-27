@@ -682,6 +682,10 @@ section {
   margin-bottom: 10px;
 }
 
+.project__music-notes-logo {
+  width: 350px;
+}
+
 .project__img {
   width: 45%;
   -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.644);
@@ -1080,6 +1084,7 @@ footer {
   }
   .project__logo {
     text-align: center;
+    margin-top: 15px;
   }
   .project h4 {
     text-align: center;
@@ -1101,10 +1106,10 @@ footer {
   .project__text-right:before, .project__text-left:before {
     width: 120%;
     height: 80%;
-    top: -10%;
-    left: 0%;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(114, 114, 114, 0.158)), to(#00000000));
-    background: linear-gradient(to top, rgba(114, 114, 114, 0.158), #00000000);
+    right: 0%;
+    left: -10%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(114, 114, 114, 0.082)), to(#00000000));
+    background: linear-gradient(to bottom, rgba(114, 114, 114, 0.082), #00000000);
   }
   .project__links {
     margin: 25px 0;
