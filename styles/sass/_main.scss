@@ -32,7 +32,7 @@ button:focus    {
 /* TYPOGRAPHY */
 
 body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: $pc;
     line-height: 1.5;
 }
@@ -136,7 +136,7 @@ section {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    min-height: 100vh;
+    // height: 100vh;
     &:after {
         z-index: -1;
         width: 150vw;
@@ -186,9 +186,9 @@ section {
         align-items: center;
     }
     &__logo {
-        font-size: 5rem;
+        font-size: 4.6rem;
         span {
-            font-size: 8rem;
+            font-size: 7.6rem;
             line-height: 1rem;
             color: $ac;
             animation: color-shift 1.5s infinite;
@@ -205,7 +205,7 @@ section {
     &__social-icons {
         i {
             color: #fff;
-            font-size: 3.2rem;
+            font-size: 2.8rem;
             transition: 0.2s;
             color: #5c5c5c;
             &:hover,
@@ -262,7 +262,7 @@ section {
         z-index: 2;
         width: 45%;
         h1 {
-            font-size: 4.6rem;
+            font-size: 4.2rem;
             font-weight: 700;
             color:$pcd;
             line-height: 5rem;
@@ -281,28 +281,26 @@ section {
         margin-bottom: 25px;
         h4 {
             line-height: 3rem;
-            font-size: 2.5rem;
+            font-size: 2.1rem;
             color: $ac;
         }
     }
     &__img {
         z-index: 2;
         width: 40%;
-        transition: 0.5s;
         img {
             width: 100%;
-            height: auto;
         }
     }
 }
 
-.fa-chevron-down {
-    position: absolute;
-    left: calc(50% - 21.85px);
-    font-size: 5rem;
-    color: $ac;
-    animation: bounce .5s ease-in-out infinite alternate;
-}
+// .fa-chevron-down {
+//     position: absolute;
+//     left: calc(50% - 21.85px);
+//     font-size: 5rem;
+//     color: $ac;
+//     animation: bounce .5s ease-in-out infinite alternate;
+// }
 
 
 /* SKILLS */
@@ -327,7 +325,7 @@ section {
             transform: scale(1.2);
         }
         i {
-            font-size: 6rem;
+            font-size: 5.6rem;
             color: $sc;
             transition: 0.4s;
             &:hover {
@@ -388,7 +386,7 @@ section {
         justify-content: center;
         width: 50%;
         h3 {
-            font-size: 4rem;
+            font-size: 3.6rem;
             font-weight: bold;
             margin-bottom: 5px;
             color: $sc;
@@ -481,10 +479,10 @@ footer {
     }
     &__logo {
         color: #fff;
-        font-size: 4rem;
+        font-size: 3.6rem;
         span {
             color: $ac;
-            font-size: 8rem;
+            font-size: 7.6rem;
             line-height: 1rem;
             animation: color-shift 1.5s infinite;
         }
@@ -524,7 +522,7 @@ footer {
         }
         i {
             color: #fff;
-            font-size: 3rem;
+            font-size: 2.6rem;
             transition: 0.2s;
             &:hover,
             &:focus {
@@ -541,7 +539,7 @@ footer {
         background: black;
         p {
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
     }
 }

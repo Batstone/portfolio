@@ -3,8 +3,6 @@ $(function () {
     // Animate on scroll initialization
     AOS.init();
 
-
-
     $(".nav__link").on("focus mouseenter", function () {
         $(this).next('.header__link--active').css('display', 'block');
         $(this).next('.footer__link--active').css('display', 'block');

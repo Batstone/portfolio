@@ -249,7 +249,7 @@ button:focus {
 
 /* TYPOGRAPHY */
 body {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #5c5c5c;
   line-height: 1.5;
 }
@@ -360,7 +360,6 @@ section {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  min-height: 100vh;
 }
 
 .background:after {
@@ -438,11 +437,11 @@ section {
 }
 
 .header__logo {
-  font-size: 5rem;
+  font-size: 4.6rem;
 }
 
 .header__logo span {
-  font-size: 8rem;
+  font-size: 7.6rem;
   line-height: 1rem;
   color: #35961d;
   -webkit-animation: color-shift 1.5s infinite;
@@ -460,7 +459,7 @@ section {
 
 .header__social-icons i {
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #5c5c5c;
@@ -540,7 +539,7 @@ section {
 }
 
 .header__text h1 {
-  font-size: 4.6rem;
+  font-size: 4.2rem;
   font-weight: 700;
   color: #393939;
   line-height: 5rem;
@@ -562,29 +561,17 @@ section {
 
 .header__titles h4 {
   line-height: 3rem;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #35961d;
 }
 
 .header__img {
   z-index: 2;
   width: 40%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .header__img img {
   width: 100%;
-  height: auto;
-}
-
-.fa-chevron-down {
-  position: absolute;
-  left: calc(50% - 21.85px);
-  font-size: 5rem;
-  color: #35961d;
-  -webkit-animation: bounce .5s ease-in-out infinite alternate;
-          animation: bounce .5s ease-in-out infinite alternate;
 }
 
 /* SKILLS */
@@ -629,7 +616,7 @@ section {
 }
 
 .skills__item i {
-  font-size: 6rem;
+  font-size: 5.6rem;
   color: #4f4f4f;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -713,7 +700,7 @@ section {
 }
 
 .project__text h3 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: bold;
   margin-bottom: 5px;
   color: #4f4f4f;
@@ -827,12 +814,12 @@ footer {
 
 .footer__logo {
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 
 .footer__logo span {
   color: #35961d;
-  font-size: 8rem;
+  font-size: 7.6rem;
   line-height: 1rem;
   -webkit-animation: color-shift 1.5s infinite;
           animation: color-shift 1.5s infinite;
@@ -897,7 +884,7 @@ footer {
 
 .footer__icons i {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.6rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -922,7 +909,7 @@ footer {
 
 .footer__text p {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 /* ANIMATIONS*/
